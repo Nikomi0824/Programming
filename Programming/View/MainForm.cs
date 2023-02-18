@@ -3,7 +3,7 @@ namespace Programming
     using System.Linq;
     public partial class MainForm : Form
     {
-        ValuePaesing.Text = " ";
+        
         public MainForm()
         {
             InitializeComponent();
@@ -79,6 +79,11 @@ namespace Programming
                     MessageBox.Show("Áנננ! Õמכמהםמ!");
                     break;
             }
+        }
+
+        private void ValuesListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

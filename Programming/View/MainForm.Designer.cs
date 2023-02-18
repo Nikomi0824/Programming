@@ -40,10 +40,10 @@
             this.ValuePaesing = new System.Windows.Forms.Label();
             this.SeasonHandle = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ChooseSeasonBox = new System.Windows.Forms.TextBox();
             this.goButtn = new System.Windows.Forms.Button();
             this.Enumeration = new System.Windows.Forms.GroupBox();
-            this.Int = new System.Windows.Forms.TextBox();
+            this.IntBox = new System.Windows.Forms.TextBox();
             this.ValuesListBox = new System.Windows.Forms.ListBox();
             this.EnumsListBox = new System.Windows.Forms.ListBox();
             this.IntValue = new System.Windows.Forms.Label();
@@ -127,7 +127,7 @@
             // SeasonHandle
             // 
             this.SeasonHandle.Controls.Add(this.label1);
-            this.SeasonHandle.Controls.Add(this.textBox2);
+            this.SeasonHandle.Controls.Add(this.ChooseSeasonBox);
             this.SeasonHandle.Controls.Add(this.goButtn);
             resources.ApplyResources(this.SeasonHandle, "SeasonHandle");
             this.SeasonHandle.Name = "SeasonHandle";
@@ -138,10 +138,10 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // textBox2
+            // ChooseSeasonBox
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.ChooseSeasonBox, "ChooseSeasonBox");
+            this.ChooseSeasonBox.Name = "ChooseSeasonBox";
             // 
             // goButtn
             // 
@@ -158,7 +158,7 @@
             // 
             // Enumeration
             // 
-            this.Enumeration.Controls.Add(this.Int);
+            this.Enumeration.Controls.Add(this.IntBox);
             this.Enumeration.Controls.Add(this.ValuesListBox);
             this.Enumeration.Controls.Add(this.EnumsListBox);
             this.Enumeration.Controls.Add(this.IntValue);
@@ -168,10 +168,10 @@
             this.Enumeration.Name = "Enumeration";
             this.Enumeration.TabStop = false;
             // 
-            // Int
+            // IntBox
             // 
-            resources.ApplyResources(this.Int, "Int");
-            this.Int.Name = "Int";
+            resources.ApplyResources(this.IntBox, "IntBox");
+            this.IntBox.Name = "IntBox";
             // 
             // ValuesListBox
             // 
@@ -232,7 +232,7 @@
         private GroupBox WeekdayParsing;
         private GroupBox SeasonHandle;
         private GroupBox Enumeration;
-        private TextBox Int;
+        private TextBox IntBox;
         private Label IntValue;
         private Label ChooseValue;
         private Label ChooseEnumaration;
@@ -243,7 +243,7 @@
         private Label label2;
         private Label ValuePaesing;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox ChooseSeasonBox;
         private Button goButtn;
     }
 }
