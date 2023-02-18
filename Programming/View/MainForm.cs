@@ -3,6 +3,7 @@ namespace Programming
     using System.Linq;
     public partial class MainForm : Form
     {
+        ValuePaesing.Text = " ";
         public MainForm()
         {
             InitializeComponent();
@@ -16,7 +17,7 @@ namespace Programming
                 typeof(Weekday)
             };
             EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
-
+            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -31,8 +32,7 @@ namespace Programming
                 return;
             }
 
-            var selectedEnum = (Type)EnumsListBox.SelectedItem;// SelectedIndices если требуется получить позиции индекса для
-                                                               // всех выбранных элементов в множественном выборе ListBox.
+            var selectedEnum = (Type)EnumsListBox.SelectedItem;// 
 
             var enumValues = Enum.GetValues(selectedEnum);//Возвращает массив значений констант в указанном перечислении.
             ValuesListBox.Items.Clear();
@@ -46,8 +46,19 @@ namespace Programming
         
         private void parsingBut_Click(object sender, EventArgs e)
         {
+            
             string weekday = textBox1.Text;
-           
+            var enumsWeekday = Enum.GetNames(typeof(Weekday));
+            foreach (var enumWeekday in enumsWeekday)
+            {
+                Enum.Parse(typeof(Weekday), enumWeekday);
+                if (enumWeekday == weekday)
+                {
+                    ValuePaesing.Text = ($"Это день недели ({enumsWeekday})");
+                }
+                                            
+            }
+
         }
 
         private void goButtn_Click(object sender, EventArgs e)

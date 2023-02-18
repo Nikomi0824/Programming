@@ -178,6 +178,7 @@
             this.ValuesListBox.FormattingEnabled = true;
             resources.ApplyResources(this.ValuesListBox, "ValuesListBox");
             this.ValuesListBox.Name = "ValuesListBox";
+            this.ValuesListBox.SelectedIndexChanged += new System.EventHandler(this.ValuesListBox_SelectedIndexChanged);
             // 
             // EnumsListBox
             // 
