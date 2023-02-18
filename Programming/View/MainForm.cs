@@ -63,7 +63,7 @@ namespace Programming
 
         private void goButtn_Click(object sender, EventArgs e)
         {
-            string season = textBox2.Text;
+            string season = ChooseSeasonBox.Text;
             switch (season)
             {
                 case "Spring":
