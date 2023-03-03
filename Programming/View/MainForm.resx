@@ -73,14 +73,14 @@
     <value>Times New Roman, 11.25pt</value>
   </data>
   <data name="parsingBut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 140</value>
+    <value>413, 149</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="parsingBut.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="parsingBut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 42</value>
+    <value>174, 33</value>
   </data>
   <data name="parsingBut.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -100,58 +100,58 @@
   <data name="&gt;&gt;parsingBut.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ParseTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 149</value>
   </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ParseTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ParseTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>368, 33</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="ParseTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;ParseTextBox.Name" xml:space="preserve">
+    <value>ParseTextBox</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;ParseTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ParseTextBox.Parent" xml:space="preserve">
     <value>WeekdayParsing</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ParseTextBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="ParseLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ParseLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 247</value>
   </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ParseLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ParseLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 26</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="ParseLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="ParseLabel.Text" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;ParseLabel.Name" xml:space="preserve">
+    <value>ParseLabel</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;ParseLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ParseLabel.Parent" xml:space="preserve">
     <value>WeekdayParsing</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ParseLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="ValuePaesing.AutoSize" type="System.Boolean, mscorlib">
@@ -221,6 +221,27 @@
   <data name="&gt;&gt;WeekdayParsing.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="SeasonComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 145</value>
+  </data>
+  <data name="SeasonComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 34</value>
+  </data>
+  <data name="SeasonComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SeasonComboBox.Name" xml:space="preserve">
+    <value>SeasonComboBox</value>
+  </data>
+  <data name="&gt;&gt;SeasonComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SeasonComboBox.Parent" xml:space="preserve">
+    <value>SeasonHandle</value>
+  </data>
+  <data name="&gt;&gt;SeasonComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -249,30 +270,6 @@
     <value>SeasonHandle</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ChooseSeasonBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 145</value>
-  </data>
-  <data name="ChooseSeasonBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="ChooseSeasonBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>368, 33</value>
-  </data>
-  <data name="ChooseSeasonBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ChooseSeasonBox.Name" xml:space="preserve">
-    <value>ChooseSeasonBox</value>
-  </data>
-  <data name="&gt;&gt;ChooseSeasonBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChooseSeasonBox.Parent" xml:space="preserve">
-    <value>SeasonHandle</value>
-  </data>
-  <data name="&gt;&gt;ChooseSeasonBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="goButtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -282,13 +279,13 @@
     <value>Times New Roman, 11.25pt</value>
   </data>
   <data name="goButtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 136</value>
+    <value>409, 145</value>
   </data>
   <data name="goButtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="goButtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 42</value>
+    <value>174, 33</value>
   </data>
   <data name="goButtn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>

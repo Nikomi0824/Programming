@@ -3,23 +3,22 @@ namespace Programming
     using System.Linq;
     public partial class MainForm : Form
     {
-        
+
         public MainForm()
         {
             InitializeComponent();
             object[] enums = new object[] //Все перечилений 
-            { 
-                typeof(Colors), 
-                typeof(Formofуeducation), 
+            {
+                typeof(Colors),
+                typeof(Formofуeducation),
                 typeof(Genre),
                 typeof(Season),
                 typeof(SmartphoneManufacturers),
                 typeof(Weekday)
             };
             EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
-            
+           SeasonComboBox.Items.AddRange(Enum.GetNames(typeof(Season)));
         }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
 
@@ -34,7 +33,7 @@ namespace Programming
 
             var selectedEnum = (Type)EnumsListBox.SelectedItem;// 
 
-            var enumValues = Enum.GetValues(selectedEnum);//Возвращает массив значений констант в указанном перечислении.
+            var enumValues = Enum.GetValues(selectedEnum);//
             ValuesListBox.Items.Clear();
             foreach (var enumValue in enumValues)
             {
@@ -46,44 +45,38 @@ namespace Programming
         
         private void parsingBut_Click(object sender, EventArgs e)
         {
-            
-            string weekday = textBox1.Text;
-            var enumsWeekday = Enum.GetNames(typeof(Weekday));
-            foreach (var enumWeekday in enumsWeekday)
-            {
-                Enum.Parse(typeof(Weekday), enumWeekday);
-                if (enumWeekday == weekday)
-                {
-                    ValuePaesing.Text = ($"Это день недели ({enumsWeekday})");
-                }
-                                            
-            }
 
+            Weekday text;
+            if(Enum.TryParse(ParseTextBox.Text,out text))
+            {
+                ParseLabel.Text = $"Это день недели {text}={(int)text}";
+            }
+            else
+            {
+                ParseLabel.Text = "Нет такого дня недели";
+            }
         }
 
         private void goButtn_Click(object sender, EventArgs e)
         {
-            string season = ChooseSeasonBox.Text;
-            switch (season)
-            {
-                case "Spring":
-                    this.BackColor = System.Drawing.Color.Green;
-                    break;
-                case "Autumn":
-                    this.BackColor = System.Drawing.Color.Orange;
-                    break;
-                case "Summer":
-                    MessageBox.Show("Ура! Солнце!");
-                    break;
-                case "Winter":
-                    MessageBox.Show("Бррр! Холодно!");
-                    break;
-            }
+            
+           
+            
         }
 
         private void ValuesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (ValuesListBox.SelectedIndex == null)
+            {
+                return;
+            }
+            int selectedValue = (int)ValuesListBox.SelectedItem;
+            IntBox.Text = selectedValue.ToString();
+        }
 
+        private void SesonComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

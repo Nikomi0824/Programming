@@ -35,12 +35,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.WeekdayParsing = new System.Windows.Forms.GroupBox();
             this.parsingBut = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.ParseTextBox = new System.Windows.Forms.TextBox();
+            this.ParseLabel = new System.Windows.Forms.Label();
             this.ValuePaesing = new System.Windows.Forms.Label();
             this.SeasonHandle = new System.Windows.Forms.GroupBox();
+            this.SeasonComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ChooseSeasonBox = new System.Windows.Forms.TextBox();
             this.goButtn = new System.Windows.Forms.Button();
             this.Enumeration = new System.Windows.Forms.GroupBox();
             this.IntBox = new System.Windows.Forms.TextBox();
@@ -89,8 +89,8 @@
             // WeekdayParsing
             // 
             this.WeekdayParsing.Controls.Add(this.parsingBut);
-            this.WeekdayParsing.Controls.Add(this.textBox1);
-            this.WeekdayParsing.Controls.Add(this.label2);
+            this.WeekdayParsing.Controls.Add(this.ParseTextBox);
+            this.WeekdayParsing.Controls.Add(this.ParseLabel);
             this.WeekdayParsing.Controls.Add(this.ValuePaesing);
             resources.ApplyResources(this.WeekdayParsing, "WeekdayParsing");
             this.WeekdayParsing.Name = "WeekdayParsing";
@@ -109,15 +109,15 @@
             this.parsingBut.UseVisualStyleBackColor = false;
             this.parsingBut.Click += new System.EventHandler(this.parsingBut_Click);
             // 
-            // textBox1
+            // ParseTextBox
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.ParseTextBox, "ParseTextBox");
+            this.ParseTextBox.Name = "ParseTextBox";
             // 
-            // label2
+            // ParseLabel
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.ParseLabel, "ParseLabel");
+            this.ParseLabel.Name = "ParseLabel";
             // 
             // ValuePaesing
             // 
@@ -126,22 +126,24 @@
             // 
             // SeasonHandle
             // 
+            this.SeasonHandle.Controls.Add(this.SeasonComboBox);
             this.SeasonHandle.Controls.Add(this.label1);
-            this.SeasonHandle.Controls.Add(this.ChooseSeasonBox);
             this.SeasonHandle.Controls.Add(this.goButtn);
             resources.ApplyResources(this.SeasonHandle, "SeasonHandle");
             this.SeasonHandle.Name = "SeasonHandle";
             this.SeasonHandle.TabStop = false;
             // 
+            // SeasonComboBox
+            // 
+            this.SeasonComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.SeasonComboBox, "SeasonComboBox");
+            this.SeasonComboBox.Name = "SeasonComboBox";
+            this.SeasonComboBox.SelectedIndexChanged += new System.EventHandler(this.SesonComboBox_SelectedIndexChanged);
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
-            // ChooseSeasonBox
-            // 
-            resources.ApplyResources(this.ChooseSeasonBox, "ChooseSeasonBox");
-            this.ChooseSeasonBox.Name = "ChooseSeasonBox";
             // 
             // goButtn
             // 
@@ -239,11 +241,11 @@
         private ListBox ValuesListBox;
         private ListBox EnumsListBox;
         private Button parsingBut;
-        private TextBox textBox1;
-        private Label label2;
+        private TextBox ParseTextBox;
+        private Label ParseLabel;
         private Label ValuePaesing;
         private Label label1;
-        private TextBox ChooseSeasonBox;
         private Button goButtn;
+        private ComboBox SeasonComboBox;
     }
 }
