@@ -59,9 +59,24 @@ namespace Programming
 
         private void goButtn_Click(object sender, EventArgs e)
         {
+            string seasons =SeasonComboBox.Text;
             
-           
-            
+            switch (seasons)
+            {
+
+                case "Spring":
+                    this.BackColor = Color.Green;
+                    break;
+                case "Autumn":
+                    this.BackColor = Color.Orange;
+                    break;
+                case "Summer":
+                    MessageBox.Show("Ура! Солнце!");
+                    break;
+                case "Winter":
+                    MessageBox.Show("Бррр! Холодно!");
+                    break;
+            }    
         }
 
         private void ValuesListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -71,7 +86,7 @@ namespace Programming
                 return;
             }
             int selectedValue = (int)ValuesListBox.SelectedItem;
-            IntBox.Text = selectedValue.ToString();
+            IntTextBox.Text = selectedValue.ToString();
         }
 
         private void SesonComboBox_SelectedIndexChanged(object sender, EventArgs e)

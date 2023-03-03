@@ -201,7 +201,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="WeekdayParsing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>700, 441</value>
+    <value>695, 437</value>
   </data>
   <data name="WeekdayParsing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -312,7 +312,7 @@
     <value>Times New Roman, 11.25pt</value>
   </data>
   <data name="SeasonHandle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>712, 5</value>
+    <value>707, 5</value>
   </data>
   <data name="SeasonHandle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -321,7 +321,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="SeasonHandle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>701, 441</value>
+    <value>695, 437</value>
   </data>
   <data name="SeasonHandle.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -345,7 +345,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 466</value>
+    <value>4, 462</value>
   </data>
   <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -354,7 +354,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1417, 451</value>
+    <value>1406, 447</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -374,28 +374,28 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="WeekdayParsing" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="SeasonHandle" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="IntBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="IntTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>513, 100</value>
   </data>
-  <data name="IntBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="IntTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="IntBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="IntTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 33</value>
   </data>
-  <data name="IntBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="IntTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;IntBox.Name" xml:space="preserve">
-    <value>IntBox</value>
+  <data name="&gt;&gt;IntTextBox.Name" xml:space="preserve">
+    <value>IntTextBox</value>
   </data>
-  <data name="&gt;&gt;IntBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;IntTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;IntBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;IntTextBox.Parent" xml:space="preserve">
     <value>Enumeration</value>
   </data>
-  <data name="&gt;&gt;IntBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;IntTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="ValuesListBox.ItemHeight" type="System.Int32, mscorlib">
@@ -557,7 +557,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="Enumeration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1413, 447</value>
+    <value>1406, 447</value>
   </data>
   <data name="Enumeration.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -590,7 +590,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1425, 922</value>
+    <value>1414, 914</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -620,7 +620,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1433, 932</value>
+    <value>1422, 924</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -650,7 +650,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="Enums.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1441, 970</value>
+    <value>1430, 962</value>
   </data>
   <data name="Enums.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -674,7 +674,7 @@
     <value>10, 25</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1441, 970</value>
+    <value>1430, 962</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3527,6 +3527,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1452, 1018</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Laboratory work № 2</value>

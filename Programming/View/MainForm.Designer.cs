@@ -43,7 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.goButtn = new System.Windows.Forms.Button();
             this.Enumeration = new System.Windows.Forms.GroupBox();
-            this.IntBox = new System.Windows.Forms.TextBox();
+            this.IntTextBox = new System.Windows.Forms.TextBox();
             this.ValuesListBox = new System.Windows.Forms.ListBox();
             this.EnumsListBox = new System.Windows.Forms.ListBox();
             this.IntValue = new System.Windows.Forms.Label();
@@ -160,7 +160,7 @@
             // 
             // Enumeration
             // 
-            this.Enumeration.Controls.Add(this.IntBox);
+            this.Enumeration.Controls.Add(this.IntTextBox);
             this.Enumeration.Controls.Add(this.ValuesListBox);
             this.Enumeration.Controls.Add(this.EnumsListBox);
             this.Enumeration.Controls.Add(this.IntValue);
@@ -170,10 +170,10 @@
             this.Enumeration.Name = "Enumeration";
             this.Enumeration.TabStop = false;
             // 
-            // IntBox
+            // IntTextBox
             // 
-            resources.ApplyResources(this.IntBox, "IntBox");
-            this.IntBox.Name = "IntBox";
+            resources.ApplyResources(this.IntTextBox, "IntTextBox");
+            this.IntTextBox.Name = "IntTextBox";
             // 
             // ValuesListBox
             // 
@@ -234,7 +234,7 @@
         private GroupBox WeekdayParsing;
         private GroupBox SeasonHandle;
         private GroupBox Enumeration;
-        private TextBox IntBox;
+        private TextBox IntTextBox;
         private Label IntValue;
         private Label ChooseValue;
         private Label ChooseEnumaration;
