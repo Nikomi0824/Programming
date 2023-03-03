@@ -10,7 +10,7 @@ namespace Programming
             object[] enums = new object[] //Все перечилений 
             {
                 typeof(Colors),
-                typeof(Formofуeducation),
+                typeof(Formofeducation),
                 typeof(Genre),
                 typeof(Season),
                 typeof(SmartphoneManufacturers),
