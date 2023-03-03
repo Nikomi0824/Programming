@@ -9,12 +9,7 @@
             InitializeComponent();
             object[] enums = new object[] //Все перечилений 
             {
-                typeof(Colors),
-                typeof(Formofeducation),
-                typeof(Genre),
-                typeof(Season),
-                typeof(SmartphoneManufacturers),
-                typeof(Weekday)
+                typeof(Colors), typeof(Formofeducation), typeof(Genre),typeof(Season),typeof(SmartphoneManufacturers), typeof(Weekday)
             };
             EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
            SeasonComboBox.Items.AddRange(Enum.GetNames(typeof(Season)));
