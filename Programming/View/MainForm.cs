@@ -1,13 +1,13 @@
-namespace Programming
+п»їnamespace Programming
 {
     using System.Linq;
     public partial class MainForm : Form
     {
-
+        
         public MainForm()
         {
             InitializeComponent();
-            object[] enums = new object[] //Все перечилений 
+            object[] enums = new object[] //Р’СЃРµ РїРµСЂРµС‡РёР»РµРЅРёР№ 
             {
                 typeof(Colors),
                 typeof(Formofeducation),
@@ -16,7 +16,7 @@ namespace Programming
                 typeof(SmartphoneManufacturers),
                 typeof(Weekday)
             };
-            EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
+            EnumsListBox.Items.AddRange((enums));//Р”РѕР±Р°РІР»СЏРµС‚ РјР°СЃСЃРёРІ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃРїРёСЃРѕРє
            SeasonComboBox.Items.AddRange(Enum.GetNames(typeof(Season)));
         }
         private void MainForm_Load(object sender, EventArgs e)
@@ -38,9 +38,7 @@ namespace Programming
             foreach (var enumValue in enumValues)
             {
                 ValuesListBox.Items.Add(enumValue);
-
             }
-            
         }
         
         private void parsingBut_Click(object sender, EventArgs e)
@@ -49,11 +47,11 @@ namespace Programming
             Weekday text;
             if(Enum.TryParse(ParseTextBox.Text,out text))
             {
-                ParseLabel.Text = $"Это день недели {text}={(int)text}";
+                ParseLabel.Text = $"Р­С‚Рѕ РґРµРЅСЊ РЅРµРґРµР»Рё {text}={(int)text}";
             }
             else
             {
-                ParseLabel.Text = "Нет такого дня недели";
+                ParseLabel.Text = "РќРµС‚ С‚Р°РєРѕРіРѕ РґРЅСЏ РЅРµРґРµР»Рё";
             }
         }
 
@@ -71,10 +69,10 @@ namespace Programming
                     this.BackColor = Color.Orange;
                     break;
                 case "Summer":
-                    MessageBox.Show("Ура! Солнце!");
+                    MessageBox.Show("РЈСЂР°! РЎРѕР»РЅС†Рµ!");
                     break;
                 case "Winter":
-                    MessageBox.Show("Бррр! Холодно!");
+                    MessageBox.Show("Р‘СЂСЂСЂ! РҐРѕР»РѕРґРЅРѕ!");
                     break;
             }    
         }
