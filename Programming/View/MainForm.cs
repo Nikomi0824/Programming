@@ -6,34 +6,39 @@
         
         public MainForm()
         {
-            InitializeComponent();
-            object[] enums = new object[] //Все перечилений 
-            {
-                typeof(Colors), typeof(Formofeducation), typeof(Genre), typeof(Season), typeof(SmartphoneManufacturers), typeof(Weekday)
-            };
-            EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
+           InitializeComponent();
+           object[] enums = new object[] //Все перечилений 
+           {
+               typeof(Colors),
+               typeof(FormOfEducation), 
+               typeof(Genre), 
+               typeof(Season), 
+               typeof(SmartphoneManufacturers), 
+               typeof(Weekday)
+           };
+           EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
            SeasonComboBox.Items.AddRange(Enum.GetNames(typeof(Season)));
         }
-        private void MainForm_Load(object sender, EventArgs e)
+         private void MainForm_Load(object sender, EventArgs e)
         {
 
         }
 
         private void Enumaration_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (EnumsListBox.SelectedItem == null)
-            {
-                return;
-            }
+           if (EnumsListBox.SelectedItem == null)
+           {
+               return;
+           }
 
-            var selectedEnum = (Type)EnumsListBox.SelectedItem;// 
+           var selectedEnum = (Type)EnumsListBox.SelectedItem;// 
 
-            var enumValues = Enum.GetValues(selectedEnum);//
-            ValuesListBox.Items.Clear();
-            foreach (var enumValue in enumValues)
-            {
-                ValuesListBox.Items.Add(enumValue);
-            }
+           var enumValues = Enum.GetValues(selectedEnum);//
+           ValuesListBox.Items.Clear();
+           foreach (var enumValue in enumValues)
+           {
+               ValuesListBox.Items.Add(enumValue);
+           }
         }
         
         private void parsingBut_Click(object sender, EventArgs e)
@@ -50,7 +55,7 @@
             }
         }
 
-        private void goButtn_Click(object sender, EventArgs e)
+        private void GoButtn_Click(object sender, EventArgs e)
         {
             string seasons =SeasonComboBox.Text;
             

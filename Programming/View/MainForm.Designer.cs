@@ -34,14 +34,14 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.WeekdayParsing = new System.Windows.Forms.GroupBox();
-            this.parsingBut = new System.Windows.Forms.Button();
+            this.ParsingBut = new System.Windows.Forms.Button();
             this.ParseTextBox = new System.Windows.Forms.TextBox();
             this.ParseLabel = new System.Windows.Forms.Label();
             this.ValuePaesing = new System.Windows.Forms.Label();
             this.SeasonHandle = new System.Windows.Forms.GroupBox();
             this.SeasonComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.goButtn = new System.Windows.Forms.Button();
+            this.GoButton = new System.Windows.Forms.Button();
             this.Enumeration = new System.Windows.Forms.GroupBox();
             this.IntTextBox = new System.Windows.Forms.TextBox();
             this.ValuesListBox = new System.Windows.Forms.ListBox();
@@ -88,7 +88,7 @@
             // 
             // WeekdayParsing
             // 
-            this.WeekdayParsing.Controls.Add(this.parsingBut);
+            this.WeekdayParsing.Controls.Add(this.ParsingBut);
             this.WeekdayParsing.Controls.Add(this.ParseTextBox);
             this.WeekdayParsing.Controls.Add(this.ParseLabel);
             this.WeekdayParsing.Controls.Add(this.ValuePaesing);
@@ -96,18 +96,18 @@
             this.WeekdayParsing.Name = "WeekdayParsing";
             this.WeekdayParsing.TabStop = false;
             // 
-            // parsingBut
+            // ParsingBut
             // 
-            this.parsingBut.BackColor = System.Drawing.Color.Silver;
-            this.parsingBut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.parsingBut.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.parsingBut.FlatAppearance.BorderSize = 2;
-            this.parsingBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.parsingBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.parsingBut, "parsingBut");
-            this.parsingBut.Name = "parsingBut";
-            this.parsingBut.UseVisualStyleBackColor = false;
-            this.parsingBut.Click += new System.EventHandler(this.parsingBut_Click);
+            this.ParsingBut.BackColor = System.Drawing.Color.Silver;
+            this.ParsingBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ParsingBut.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.ParsingBut.FlatAppearance.BorderSize = 2;
+            this.ParsingBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.ParsingBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.ParsingBut, "ParsingBut");
+            this.ParsingBut.Name = "ParsingBut";
+            this.ParsingBut.UseVisualStyleBackColor = false;
+            this.ParsingBut.Click += new System.EventHandler(this.parsingBut_Click);
             // 
             // ParseTextBox
             // 
@@ -128,7 +128,7 @@
             // 
             this.SeasonHandle.Controls.Add(this.SeasonComboBox);
             this.SeasonHandle.Controls.Add(this.label1);
-            this.SeasonHandle.Controls.Add(this.goButtn);
+            this.SeasonHandle.Controls.Add(this.GoButton);
             resources.ApplyResources(this.SeasonHandle, "SeasonHandle");
             this.SeasonHandle.Name = "SeasonHandle";
             this.SeasonHandle.TabStop = false;
@@ -145,18 +145,18 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // goButtn
+            // GoButton
             // 
-            this.goButtn.BackColor = System.Drawing.Color.Silver;
-            this.goButtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.goButtn.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.goButtn.FlatAppearance.BorderSize = 2;
-            this.goButtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.goButtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.goButtn, "goButtn");
-            this.goButtn.Name = "goButtn";
-            this.goButtn.UseVisualStyleBackColor = false;
-            this.goButtn.Click += new System.EventHandler(this.goButtn_Click);
+            this.GoButton.BackColor = System.Drawing.Color.Silver;
+            this.GoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GoButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.GoButton.FlatAppearance.BorderSize = 2;
+            this.GoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.GoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.GoButton, "GoButton");
+            this.GoButton.Name = "GoButton";
+            this.GoButton.UseVisualStyleBackColor = false;
+            this.GoButton.Click += new System.EventHandler(this.GoButtn_Click);
             // 
             // Enumeration
             // 
@@ -240,12 +240,12 @@
         private Label ChooseEnumaration;
         private ListBox ValuesListBox;
         private ListBox EnumsListBox;
-        private Button parsingBut;
+        private Button ParsingBut;
         private TextBox ParseTextBox;
         private Label ParseLabel;
         private Label ValuePaesing;
         private Label label1;
-        private Button goButtn;
+        private Button GoButton;
         private ComboBox SeasonComboBox;
     }
 }

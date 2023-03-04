@@ -5,6 +5,6 @@
     Thriller,
     Action, 
     Horror,
-    Dlockbuster
+    Dlockbaster
 
 }
