@@ -5,5 +5,5 @@
   Sony,
   LG,
   Fly,
-  Xiomi
+  Xiaomi
 }
