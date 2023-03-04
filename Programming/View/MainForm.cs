@@ -31,9 +31,9 @@
                return;
            }
 
-           var selectedEnum = (Type)EnumsListBox.SelectedItem;// 
+           var selectedEnum = (Type)EnumsListBox.SelectedItem;
 
-           var enumValues = Enum.GetValues(selectedEnum);//
+           var enumValues = Enum.GetValues(selectedEnum);
            ValuesListBox.Items.Clear();
            foreach (var enumValue in enumValues)
            {
@@ -41,7 +41,7 @@
            }
         }
         
-        private void parsingBut_Click(object sender, EventArgs e)
+        private void ParsingBut_Click(object sender, EventArgs e)
         {
 
             Weekday text;

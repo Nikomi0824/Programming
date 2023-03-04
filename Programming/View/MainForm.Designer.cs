@@ -107,7 +107,7 @@
             resources.ApplyResources(this.ParsingBut, "ParsingBut");
             this.ParsingBut.Name = "ParsingBut";
             this.ParsingBut.UseVisualStyleBackColor = false;
-            this.ParsingBut.Click += new System.EventHandler(this.parsingBut_Click);
+            this.ParsingBut.Click += new System.EventHandler(this.ParsingBut_Click);
             // 
             // ParseTextBox
             // 
