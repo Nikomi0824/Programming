@@ -19,12 +19,9 @@
            EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
            SeasonComboBox.Items.AddRange(Enum.GetNames(typeof(Season)));
         }
-         private void MainForm_Load(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void Enumeration_SelectedIndexChanged(object sender, EventArgs e)
+        private void Enumaration_SelectedIndexChanged(object sender, EventArgs e)
         {
            if (EnumsListBox.SelectedItem == null)
            {

@@ -210,7 +210,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Enums);
             this.Name = "MainForm";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Enums.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
