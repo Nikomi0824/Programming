@@ -40,7 +40,7 @@
             this.ValuePaesing = new System.Windows.Forms.Label();
             this.SeasonHandle = new System.Windows.Forms.GroupBox();
             this.SeasonComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ChooseSesonLabel = new System.Windows.Forms.Label();
             this.GoButton = new System.Windows.Forms.Button();
             this.Enumeration = new System.Windows.Forms.GroupBox();
             this.IntTextBox = new System.Windows.Forms.TextBox();
@@ -127,7 +127,7 @@
             // SeasonHandle
             // 
             this.SeasonHandle.Controls.Add(this.SeasonComboBox);
-            this.SeasonHandle.Controls.Add(this.label1);
+            this.SeasonHandle.Controls.Add(this.ChooseSesonLabel);
             this.SeasonHandle.Controls.Add(this.GoButton);
             resources.ApplyResources(this.SeasonHandle, "SeasonHandle");
             this.SeasonHandle.Name = "SeasonHandle";
@@ -140,10 +140,10 @@
             this.SeasonComboBox.Name = "SeasonComboBox";
             this.SeasonComboBox.SelectedIndexChanged += new System.EventHandler(this.SesonComboBox_SelectedIndexChanged);
             // 
-            // label1
+            // ChooseSesonLabel
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.ChooseSesonLabel, "ChooseSesonLabel");
+            this.ChooseSesonLabel.Name = "ChooseSesonLabel";
             // 
             // GoButton
             // 
@@ -244,7 +244,7 @@
         private TextBox ParseTextBox;
         private Label ParseLabel;
         private Label ValuePaesing;
-        private Label label1;
+        private Label ChooseSesonLabel;
         private Button GoButton;
         private ComboBox SeasonComboBox;
     }

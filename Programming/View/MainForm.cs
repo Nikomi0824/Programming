@@ -44,47 +44,46 @@
         private void ParsingBut_Click(object sender, EventArgs e)
         {
 
-            Weekday text;
-            if(Enum.TryParse(ParseTextBox.Text,out text))
-            {
-                ParseLabel.Text = $"Это день недели {text}={(int)text}";
-            }
-            else
-            {
-                ParseLabel.Text = "Нет такого дня недели";
-            }
+           Weekday text;
+           if(Enum.TryParse(ParseTextBox.Text,out text))
+           {
+               ParseLabel.Text = $"Это день недели {text}={(int)text}";
+           }
+           else
+           {
+               ParseLabel.Text = "Нет такого дня недели";
+           }
         }
 
         private void GoButtn_Click(object sender, EventArgs e)
         {
-            string seasons =SeasonComboBox.Text;
-            
-            switch (seasons)
-            {
+           string seasons =SeasonComboBox.Text;
+           switch (seasons)
+           {
 
-                case "Spring":
-                    this.BackColor = Color.Green;
-                    break;
-                case "Autumn":
-                    this.BackColor = Color.Orange;
-                    break;
-                case "Summer":
-                    MessageBox.Show("Ура! Солнце!");
-                    break;
-                case "Winter":
-                    MessageBox.Show("Бррр! Холодно!");
-                    break;
-            }    
+               case "Spring":
+                   this.BackColor = Color.Green;
+                   break;
+               case "Autumn":
+                   this.BackColor = Color.Orange;
+                   break;
+               case "Summer":
+                   MessageBox.Show("Ура! Солнце!");
+                   break;
+               case "Winter":
+                   MessageBox.Show("Бррр! Холодно!");
+                   break;
+           }    
         }
 
         private void ValuesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ValuesListBox.SelectedIndex == null)
-            {
-                return;
-            }
-            int selectedValue = (int)ValuesListBox.SelectedItem;
-            IntTextBox.Text = selectedValue.ToString();
+           if (ValuesListBox.SelectedIndex == null)
+           {
+               return;
+           }
+           int selectedValue = (int)ValuesListBox.SelectedItem;
+           IntTextBox.Text = selectedValue.ToString();
         }
 
         private void SesonComboBox_SelectedIndexChanged(object sender, EventArgs e)
