@@ -21,7 +21,7 @@
         }
         
 
-        private void Enumaration_SelectedIndexChanged(object sender, EventArgs e)
+        private void Enumeration_SelectedIndexChanged(object sender, EventArgs e)
         {
            if (EnumsListBox.SelectedItem == null)
            {
