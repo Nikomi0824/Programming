@@ -47,7 +47,7 @@ namespace Programming.Model
             get { return _second; }
             set
             {
-                if (_second > 0 && _second < 60)
+                if (value > 0 && value < 60)
                 {
                     _second = value;
                 }
@@ -57,11 +57,11 @@ namespace Programming.Model
                 }
             }
         }
-        public Time(int _hour,int _minute, int _second )
+        public Time(int hour,int minute, int second )
         {     
-            Hour = _hour;
-            Minute = _minute;
-            Second = _second;
+            Hour = hour;
+            Minute = minute;
+            Second = second;
         }
         public Time() { }
     }

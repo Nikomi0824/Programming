@@ -17,7 +17,7 @@ namespace Programming.Model
             get { return _heigth; }
             set
             {
-                if (_heigth > 0)
+                if (value > 0)
                 {
                     _heigth = value;
                 }
@@ -32,7 +32,7 @@ namespace Programming.Model
             get { return _width; }
             set
             {
-                if (_width > 0)
+                if (value > 0)
                 {
                     _width = value;
                 }
@@ -47,11 +47,11 @@ namespace Programming.Model
             get { return _colors; }
             set { _colors = value; }
         }
-        public Square(double _heigth, double _width, string _colors)
+        public Square(double heigth, double width, string сolors)
         {
-            Heigth= _heigth;
-            Width= _width;
-            Colors= _colors;
+            Heigth= heigth;
+            Width= width;
+            Colors= сolors;
         }
         public Square() { }
     }

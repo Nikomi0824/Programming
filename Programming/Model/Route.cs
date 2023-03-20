@@ -27,11 +27,11 @@ namespace Programming.Model
             get { return _flightTime; } 
             set { _flightTime  = value * 60 ;}
         }
-        public Route(string _departurePoint, string _destination, int _flightTime)
+        public Route(string departurePoint, string destination, int flightTime)
         {
-            DeparturePoint= _departurePoint;
-            Destination= _destination;
-            FlightTime= _flightTime;
+            DeparturePoint= departurePoint;
+            Destination= destination;
+            FlightTime= flightTime;
         }
         public Route() { }
     }

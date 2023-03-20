@@ -27,11 +27,11 @@ namespace Programming.Model
             get { return _songTitle; }
             set { _songTitle = value; }
         }
-        public Song(string _executor, string _songTitle, int _songTimeInMinutes)
+        public Song(string executor, string songTitle, int songTimeInMinutes)
         {
-            Executor= _executor;
-            SongTitle= _songTitle;
-            SongTimeInMinutes = _songTimeInMinutes;
+            Executor= executor;
+            SongTitle= songTitle;
+            SongTimeInMinutes = songTimeInMinutes;
         
         }
         public Song() { }

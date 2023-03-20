@@ -49,7 +49,7 @@ namespace Programming.Model
             get { return _rating; }
             set
             {
-                if (_rating>0 && _rating < 10)
+                if (value>0 && value< 10)
                 {
                     _rating = value;
                 }
@@ -59,13 +59,13 @@ namespace Programming.Model
                 }
             }
         }
-        public Film(  string _title, int _durationInMinutes,int _yearOfRelease, string _genre, double _rating)
+        public Film(  string title, int durationInMinutes,int yearOfRelease, string genre, double rating)
         {
-            Title= _title;
-            DurationInMinutes= _durationInMinutes;
-            YearOfRelease= _yearOfRelease;
-            Genre= _genre;
-            Rating= _rating;
+            Title= title;
+            DurationInMinutes= durationInMinutes;
+            YearOfRelease= yearOfRelease;
+            Genre= genre;
+            Rating= rating;
         }
         public Film() { }
     }

@@ -27,11 +27,11 @@ namespace Programming.Model
             get { return _phoneNumber; }
             set { _phoneNumber = value; }
         }
-        public Contact(string _name,string _email,  string _phoneNumber)
+        public Contact(string name,string email,  string phoneNumber)
         {
-            Name = _name;
-            Email = _email;
-            PhoneNumber = _phoneNumber;
+            Name = name;
+            Email = email;
+            PhoneNumber = phoneNumber;
         }
         public Contact() { }
     }
