@@ -49,6 +49,7 @@
             this.IntValue = new System.Windows.Forms.Label();
             this.ChooseValue = new System.Windows.Forms.Label();
             this.ChooseEnumaration = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Enums.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -61,6 +62,7 @@
             // Enums
             // 
             this.Enums.Controls.Add(this.tabPage1);
+            this.Enums.Controls.Add(this.tabPage2);
             resources.ApplyResources(this.Enums, "Enums");
             this.Enums.Name = "Enums";
             this.Enums.SelectedIndex = 0;
@@ -204,6 +206,12 @@
             resources.ApplyResources(this.ChooseEnumaration, "ChooseEnumaration");
             this.ChooseEnumaration.Name = "ChooseEnumaration";
             // 
+            // tabPage2
+            // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -246,5 +254,6 @@
         private Label ChooseSesonLabel;
         private Button GoButton;
         private ComboBox SeasonComboBox;
+        private TabPage tabPage2;
     }
 }

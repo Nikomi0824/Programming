@@ -57,369 +57,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>Enums</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Enums.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Enums.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Enums.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1005, 587</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Enums.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Enums.Name" xml:space="preserve">
-    <value>Enums</value>
-  </data>
-  <data name="&gt;&gt;Enums.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Enums.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Enums.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Enumeration" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>997, 559</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Enums</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>Enums</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;WeekdayParsing.Name" xml:space="preserve">
-    <value>WeekdayParsing</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;SeasonHandle.Name" xml:space="preserve">
-    <value>SeasonHandle</value>
-  </data>
-  <data name="&gt;&gt;SeasonHandle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SeasonHandle.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;SeasonHandle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 279</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>985, 271</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="WeekdayParsing" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="SeasonHandle" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;IntTextBox.Name" xml:space="preserve">
-    <value>IntTextBox</value>
-  </data>
-  <data name="&gt;&gt;IntTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IntTextBox.Parent" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;IntTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ValuesListBox.Name" xml:space="preserve">
-    <value>ValuesListBox</value>
-  </data>
-  <data name="&gt;&gt;ValuesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ValuesListBox.Parent" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;ValuesListBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;EnumsListBox.Name" xml:space="preserve">
-    <value>EnumsListBox</value>
-  </data>
-  <data name="&gt;&gt;EnumsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EnumsListBox.Parent" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;EnumsListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;IntValue.Name" xml:space="preserve">
-    <value>IntValue</value>
-  </data>
-  <data name="&gt;&gt;IntValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IntValue.Parent" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;IntValue.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ChooseValue.Name" xml:space="preserve">
-    <value>ChooseValue</value>
-  </data>
-  <data name="&gt;&gt;ChooseValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChooseValue.Parent" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;ChooseValue.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ChooseEnumaration.Name" xml:space="preserve">
-    <value>ChooseEnumaration</value>
-  </data>
-  <data name="&gt;&gt;ChooseEnumaration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChooseEnumaration.Parent" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;ChooseEnumaration.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Enumeration.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Enumeration.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
-  </data>
-  <data name="Enumeration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="Enumeration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>985, 270</value>
-  </data>
-  <data name="Enumeration.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Enumeration.Text" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;Enumeration.Name" xml:space="preserve">
-    <value>Enumeration</value>
-  </data>
-  <data name="&gt;&gt;Enumeration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Enumeration.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;Enumeration.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>991, 553</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Enumeration" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;ParsingBut.Name" xml:space="preserve">
-    <value>ParsingBut</value>
-  </data>
-  <data name="&gt;&gt;ParsingBut.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ParsingBut.Parent" xml:space="preserve">
-    <value>WeekdayParsing</value>
-  </data>
-  <data name="&gt;&gt;ParsingBut.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ParseTextBox.Name" xml:space="preserve">
-    <value>ParseTextBox</value>
-  </data>
-  <data name="&gt;&gt;ParseTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ParseTextBox.Parent" xml:space="preserve">
-    <value>WeekdayParsing</value>
-  </data>
-  <data name="&gt;&gt;ParseTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ParseLabel.Name" xml:space="preserve">
-    <value>ParseLabel</value>
-  </data>
-  <data name="&gt;&gt;ParseLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ParseLabel.Parent" xml:space="preserve">
-    <value>WeekdayParsing</value>
-  </data>
-  <data name="&gt;&gt;ParseLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ValuePaesing.Name" xml:space="preserve">
-    <value>ValuePaesing</value>
-  </data>
-  <data name="&gt;&gt;ValuePaesing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ValuePaesing.Parent" xml:space="preserve">
-    <value>WeekdayParsing</value>
-  </data>
-  <data name="&gt;&gt;ValuePaesing.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="WeekdayParsing.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="WeekdayParsing.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
-  </data>
-  <data name="WeekdayParsing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="WeekdayParsing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>486, 265</value>
-  </data>
-  <data name="WeekdayParsing.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="WeekdayParsing.Text" xml:space="preserve">
-    <value>Weekday Parsing</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.Name" xml:space="preserve">
-    <value>WeekdayParsing</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;WeekdayParsing.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ParsingBut.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ParsingBut.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 11.25pt</value>
   </data>
   <data name="ParsingBut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 89</value>
+    <value>413, 148</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ParsingBut.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ParsingBut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 25</value>
+    <value>174, 42</value>
   </data>
   <data name="ParsingBut.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -440,10 +101,13 @@
     <value>0</value>
   </data>
   <data name="ParseTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 89</value>
+    <value>37, 148</value>
+  </data>
+  <data name="ParseTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ParseTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 25</value>
+    <value>368, 33</value>
   </data>
   <data name="ParseTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -464,10 +128,13 @@
     <value>True</value>
   </data>
   <data name="ParseLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 148</value>
+    <value>37, 247</value>
+  </data>
+  <data name="ParseLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ParseLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
+    <value>0, 26</value>
   </data>
   <data name="ParseLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -488,10 +155,13 @@
     <value>True</value>
   </data>
   <data name="ValuePaesing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 69</value>
+    <value>37, 115</value>
+  </data>
+  <data name="ValuePaesing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ValuePaesing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 17</value>
+    <value>233, 26</value>
   </data>
   <data name="ValuePaesing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -512,80 +182,47 @@
   <data name="&gt;&gt;ValuePaesing.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;SeasonComboBox.Name" xml:space="preserve">
-    <value>SeasonComboBox</value>
-  </data>
-  <data name="&gt;&gt;SeasonComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SeasonComboBox.Parent" xml:space="preserve">
-    <value>SeasonHandle</value>
-  </data>
-  <data name="&gt;&gt;SeasonComboBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ChooseSesonLabel.Name" xml:space="preserve">
-    <value>ChooseSesonLabel</value>
-  </data>
-  <data name="&gt;&gt;ChooseSesonLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChooseSesonLabel.Parent" xml:space="preserve">
-    <value>SeasonHandle</value>
-  </data>
-  <data name="&gt;&gt;ChooseSesonLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GoButton.Name" xml:space="preserve">
-    <value>GoButton</value>
-  </data>
-  <data name="&gt;&gt;GoButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoButton.Parent" xml:space="preserve">
-    <value>SeasonHandle</value>
-  </data>
-  <data name="&gt;&gt;GoButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="SeasonHandle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="WeekdayParsing.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="SeasonHandle.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="WeekdayParsing.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 11.25pt</value>
   </data>
-  <data name="SeasonHandle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 3</value>
+  <data name="WeekdayParsing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
   </data>
-  <data name="SeasonHandle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>487, 265</value>
+  <data name="WeekdayParsing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
-  <data name="SeasonHandle.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="WeekdayParsing.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
-  <data name="SeasonHandle.Text" xml:space="preserve">
-    <value>Season Handle</value>
+  <data name="WeekdayParsing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 445</value>
   </data>
-  <data name="&gt;&gt;SeasonHandle.Name" xml:space="preserve">
-    <value>SeasonHandle</value>
+  <data name="WeekdayParsing.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;SeasonHandle.Type" xml:space="preserve">
+  <data name="WeekdayParsing.Text" xml:space="preserve">
+    <value>Weekday Parsing</value>
+  </data>
+  <data name="&gt;&gt;WeekdayParsing.Name" xml:space="preserve">
+    <value>WeekdayParsing</value>
+  </data>
+  <data name="&gt;&gt;WeekdayParsing.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SeasonHandle.Parent" xml:space="preserve">
+  <data name="&gt;&gt;WeekdayParsing.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;SeasonHandle.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;WeekdayParsing.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="SeasonComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 87</value>
-  </data>
-  <data name="SeasonComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>33, 145</value>
   </data>
   <data name="SeasonComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 25</value>
+    <value>370, 34</value>
   </data>
   <data name="SeasonComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -609,10 +246,13 @@
     <value>On</value>
   </data>
   <data name="ChooseSesonLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 67</value>
+    <value>33, 112</value>
+  </data>
+  <data name="ChooseSesonLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ChooseSesonLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
+    <value>152, 26</value>
   </data>
   <data name="ChooseSesonLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -639,10 +279,13 @@
     <value>Times New Roman, 11.25pt</value>
   </data>
   <data name="GoButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 87</value>
+    <value>411, 145</value>
+  </data>
+  <data name="GoButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="GoButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 25</value>
+    <value>174, 42</value>
   </data>
   <data name="GoButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -662,11 +305,83 @@
   <data name="&gt;&gt;GoButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="SeasonHandle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="SeasonHandle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 11.25pt</value>
+  </data>
+  <data name="SeasonHandle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>710, 5</value>
+  </data>
+  <data name="SeasonHandle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="SeasonHandle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="SeasonHandle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 445</value>
+  </data>
+  <data name="SeasonHandle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SeasonHandle.Text" xml:space="preserve">
+    <value>Season Handle</value>
+  </data>
+  <data name="&gt;&gt;SeasonHandle.Name" xml:space="preserve">
+    <value>SeasonHandle</value>
+  </data>
+  <data name="&gt;&gt;SeasonHandle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SeasonHandle.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;SeasonHandle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 470</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1412, 455</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="WeekdayParsing" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="SeasonHandle" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="IntTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 60</value>
+    <value>659, 100</value>
+  </data>
+  <data name="IntTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="IntTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 25</value>
+    <value>141, 33</value>
   </data>
   <data name="IntTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -684,13 +399,16 @@
     <value>0</value>
   </data>
   <data name="ValuesListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>26</value>
   </data>
   <data name="ValuesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 60</value>
+    <value>353, 100</value>
+  </data>
+  <data name="ValuesListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ValuesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 191</value>
+    <value>273, 316</value>
   </data>
   <data name="ValuesListBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -708,13 +426,16 @@
     <value>1</value>
   </data>
   <data name="EnumsListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>26</value>
   </data>
   <data name="EnumsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 60</value>
+    <value>41, 100</value>
+  </data>
+  <data name="EnumsListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="EnumsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 191</value>
+    <value>273, 316</value>
   </data>
   <data name="EnumsListBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -735,10 +456,13 @@
     <value>True</value>
   </data>
   <data name="IntValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 40</value>
+    <value>659, 67</value>
+  </data>
+  <data name="IntValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="IntValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 17</value>
+    <value>106, 26</value>
   </data>
   <data name="IntValue.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -762,10 +486,13 @@
     <value>True</value>
   </data>
   <data name="ChooseValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 40</value>
+    <value>353, 67</value>
+  </data>
+  <data name="ChooseValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ChooseValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 17</value>
+    <value>150, 26</value>
   </data>
   <data name="ChooseValue.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -790,10 +517,13 @@
     <value>True</value>
   </data>
   <data name="ChooseEnumaration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 40</value>
+    <value>41, 67</value>
+  </data>
+  <data name="ChooseEnumaration.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ChooseEnumaration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 17</value>
+    <value>216, 26</value>
   </data>
   <data name="ChooseEnumaration.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -814,14 +544,167 @@
   <data name="&gt;&gt;ChooseEnumaration.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="Enumeration.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Enumeration.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 11.25pt</value>
+  </data>
+  <data name="Enumeration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="Enumeration.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="Enumeration.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="Enumeration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1412, 455</value>
+  </data>
+  <data name="Enumeration.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Enumeration.Text" xml:space="preserve">
+    <value>Enumeration</value>
+  </data>
+  <data name="&gt;&gt;Enumeration.Name" xml:space="preserve">
+    <value>Enumeration</value>
+  </data>
+  <data name="&gt;&gt;Enumeration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Enumeration.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;Enumeration.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1420, 930</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Enumeration" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1428, 940</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Enums</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>Enums</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1428, 940</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>Enums</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Enums.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Enums.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Enums.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="Enums.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1436, 978</value>
+  </data>
+  <data name="Enums.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Enums.Name" xml:space="preserve">
+    <value>Enums</value>
+  </data>
+  <data name="&gt;&gt;Enums.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Enums.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Enums.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>10, 25</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1005, 587</value>
+    <value>1436, 978</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3672,8 +3555,11 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1021, 626</value>
+    <value>1449, 1006</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Laboratory work № 2</value>
