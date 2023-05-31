@@ -50,6 +50,18 @@
             this.ChooseValue = new System.Windows.Forms.Label();
             this.ChooseEnumaration = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.RectanglesGroupBox = new System.Windows.Forms.GroupBox();
+            this.FindButton = new System.Windows.Forms.Button();
+            this.ColorsTextBox = new System.Windows.Forms.TextBox();
+            this.WidthTextBox = new System.Windows.Forms.TextBox();
+            this.HeigthTextBox = new System.Windows.Forms.TextBox();
+            this.ColorsLabel = new System.Windows.Forms.Label();
+            this.WidthLabel = new System.Windows.Forms.Label();
+            this.HeigthLabel = new System.Windows.Forms.Label();
+            this.ReactanglesListBox = new System.Windows.Forms.ListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.Enums.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -57,6 +69,9 @@
             this.WeekdayParsing.SuspendLayout();
             this.SeasonHandle.SuspendLayout();
             this.Enumeration.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.RectanglesGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Enums
@@ -140,7 +155,6 @@
             this.SeasonComboBox.FormattingEnabled = true;
             resources.ApplyResources(this.SeasonComboBox, "SeasonComboBox");
             this.SeasonComboBox.Name = "SeasonComboBox";
-            this.SeasonComboBox.SelectedIndexChanged += new System.EventHandler(this.SesonComboBox_SelectedIndexChanged);
             // 
             // ChooseSesonLabel
             // 
@@ -208,9 +222,94 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.tableLayoutPanel3);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.RectanglesGroupBox, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.groupBox2, 1, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // RectanglesGroupBox
+            // 
+            this.RectanglesGroupBox.Controls.Add(this.FindButton);
+            this.RectanglesGroupBox.Controls.Add(this.ColorsTextBox);
+            this.RectanglesGroupBox.Controls.Add(this.WidthTextBox);
+            this.RectanglesGroupBox.Controls.Add(this.HeigthTextBox);
+            this.RectanglesGroupBox.Controls.Add(this.ColorsLabel);
+            this.RectanglesGroupBox.Controls.Add(this.WidthLabel);
+            this.RectanglesGroupBox.Controls.Add(this.HeigthLabel);
+            this.RectanglesGroupBox.Controls.Add(this.ReactanglesListBox);
+            resources.ApplyResources(this.RectanglesGroupBox, "RectanglesGroupBox");
+            this.RectanglesGroupBox.Name = "RectanglesGroupBox";
+            this.RectanglesGroupBox.TabStop = false;
+            this.RectanglesGroupBox.Enter += new System.EventHandler(this.RectanglesGroupBox_Enter);
+            // 
+            // FindButton
+            // 
+            this.FindButton.BackColor = System.Drawing.Color.Silver;
+            this.FindButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FindButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.FindButton.FlatAppearance.BorderSize = 2;
+            this.FindButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.FindButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.FindButton, "FindButton");
+            this.FindButton.Name = "FindButton";
+            this.FindButton.UseVisualStyleBackColor = false;
+            // 
+            // ColorsTextBox
+            // 
+            resources.ApplyResources(this.ColorsTextBox, "ColorsTextBox");
+            this.ColorsTextBox.Name = "ColorsTextBox";
+            this.ColorsTextBox.TextChanged += new System.EventHandler(this.ColorsTextBox_TextChanged);
+            // 
+            // WidthTextBox
+            // 
+            resources.ApplyResources(this.WidthTextBox, "WidthTextBox");
+            this.WidthTextBox.Name = "WidthTextBox";
+            // 
+            // HeigthTextBox
+            // 
+            resources.ApplyResources(this.HeigthTextBox, "HeigthTextBox");
+            this.HeigthTextBox.Name = "HeigthTextBox";
+            // 
+            // ColorsLabel
+            // 
+            resources.ApplyResources(this.ColorsLabel, "ColorsLabel");
+            this.ColorsLabel.Name = "ColorsLabel";
+            // 
+            // WidthLabel
+            // 
+            resources.ApplyResources(this.WidthLabel, "WidthLabel");
+            this.WidthLabel.Name = "WidthLabel";
+            // 
+            // HeigthLabel
+            // 
+            resources.ApplyResources(this.HeigthLabel, "HeigthLabel");
+            this.HeigthLabel.Name = "HeigthLabel";
+            // 
+            // ReactanglesListBox
+            // 
+            this.ReactanglesListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.ReactanglesListBox, "ReactanglesListBox");
+            this.ReactanglesListBox.Items.AddRange(new object[] {
+            resources.GetString("ReactanglesListBox.Items"),
+            resources.GetString("ReactanglesListBox.Items1"),
+            resources.GetString("ReactanglesListBox.Items2"),
+            resources.GetString("ReactanglesListBox.Items3"),
+            resources.GetString("ReactanglesListBox.Items4")});
+            this.ReactanglesListBox.Name = "ReactanglesListBox";
+            this.ReactanglesListBox.SelectedIndexChanged += new System.EventHandler(this.ReactanglesListBox_SelectedIndexChanged);
+            // 
+            // groupBox2
+            // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
             // 
             // MainForm
             // 
@@ -228,6 +327,10 @@
             this.SeasonHandle.PerformLayout();
             this.Enumeration.ResumeLayout(false);
             this.Enumeration.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.RectanglesGroupBox.ResumeLayout(false);
+            this.RectanglesGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -255,5 +358,17 @@
         private Button GoButton;
         private ComboBox SeasonComboBox;
         private TabPage tabPage2;
+        private TableLayoutPanel tableLayoutPanel3;
+        private GroupBox RectanglesGroupBox;
+        private TextBox ColorsTextBox;
+        private TextBox WidthTextBox;
+        private TextBox HeigthTextBox;
+        private Label ColorsLabel;
+        private Label WidthLabel;
+        private Label HeigthLabel;
+        private ListBox ReactanglesListBox;
+        private GroupBox groupBox2;
+        private Button FindButton;
+        private FontDialog fontDialog1;
     }
 }

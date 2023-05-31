@@ -1,12 +1,27 @@
 ﻿namespace Programming
 {
+    using Programming.Model;
     using System.Linq;
     public partial class MainForm : Form
     {
+        private Reactangles[] _rectangle =new Reactangles[5] ;
+        private Reactangles _currentRectangle;
+        
         
         public MainForm()
         {
+            Random _random = new Random(0-1000);
+            Random rand = new Random();
+           
+            for (int i = 0; i > _rectangle.Length; i++)
+            {
+                 var v = Enum.GetValues(typeof(Colors));
+                _rectangle[i].Width = _random.Next();
+                _rectangle[i].Heigth = _random.Next();
+                _rectangle[i].Colors = (string)v.GetValue(rand.Next(v.Length));
+            }
            InitializeComponent();
+
            object[] enums = new object[] //Все перечилений 
            {
                typeof(Colors),
@@ -18,6 +33,7 @@
            };
            EnumsListBox.Items.AddRange((enums));//Добавляет массив элементов в список
            SeasonComboBox.Items.AddRange(Enum.GetNames(typeof(Season)));
+
         }
         
 
@@ -83,9 +99,22 @@
            IntTextBox.Text = selectedValue.ToString();
         }
 
-        private void SesonComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void RectanglesGroupBox_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void ReactanglesListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _currentRectangle =_rectangle[ReactanglesListBox.SelectedIndex];
+            WidthTextBox.Text = _currentRectangle.Width.ToString();
             
+
+        }
+
+        private void ColorsTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

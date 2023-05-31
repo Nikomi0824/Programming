@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programming.Model
 {
-    internal class Square
+    internal class Reactangles
     {
         private double _heigth;
         private double _width;
@@ -47,12 +47,12 @@ namespace Programming.Model
             get { return _colors; }
             set { _colors = value; }
         }
-        public Square(double heigth, double width, string сolors)
+        public Reactangles(double heigth, double width, string сolors)
         {
             Heigth= heigth;
             Width= width;
             Colors= сolors;
         }
-        public Square() { }
+        public Reactangles() { }
     }
 }
