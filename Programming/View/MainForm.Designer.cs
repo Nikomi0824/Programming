@@ -1,4 +1,5 @@
-﻿namespace Programming
+﻿
+namespace Programming
 {
     partial class MainForm
     {
@@ -29,346 +30,160 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.Enums = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.WeekdayParsing = new System.Windows.Forms.GroupBox();
-            this.ParsingBut = new System.Windows.Forms.Button();
-            this.ParseTextBox = new System.Windows.Forms.TextBox();
-            this.ParseLabel = new System.Windows.Forms.Label();
-            this.ValuePaesing = new System.Windows.Forms.Label();
-            this.SeasonHandle = new System.Windows.Forms.GroupBox();
-            this.SeasonComboBox = new System.Windows.Forms.ComboBox();
-            this.ChooseSesonLabel = new System.Windows.Forms.Label();
-            this.GoButton = new System.Windows.Forms.Button();
-            this.Enumeration = new System.Windows.Forms.GroupBox();
-            this.IntTextBox = new System.Windows.Forms.TextBox();
-            this.ValuesListBox = new System.Windows.Forms.ListBox();
-            this.EnumsListBox = new System.Windows.Forms.ListBox();
-            this.IntValue = new System.Windows.Forms.Label();
-            this.ChooseValue = new System.Windows.Forms.Label();
-            this.ChooseEnumaration = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.RectanglesGroupBox = new System.Windows.Forms.GroupBox();
-            this.FindButton = new System.Windows.Forms.Button();
-            this.ColorsTextBox = new System.Windows.Forms.TextBox();
-            this.WidthTextBox = new System.Windows.Forms.TextBox();
-            this.HeigthTextBox = new System.Windows.Forms.TextBox();
-            this.ColorsLabel = new System.Windows.Forms.Label();
-            this.WidthLabel = new System.Windows.Forms.Label();
-            this.HeigthLabel = new System.Windows.Forms.Label();
-            this.ReactanglesListBox = new System.Windows.Forms.ListBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.Enums.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.WeekdayParsing.SuspendLayout();
-            this.SeasonHandle.SuspendLayout();
-            this.Enumeration.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.RectanglesGroupBox.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // Enums
-            // 
-            this.Enums.Controls.Add(this.tabPage1);
-            this.Enums.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.Enums, "Enums");
-            this.Enums.Name = "Enums";
-            this.Enums.SelectedIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.Enumeration, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.WeekdayParsing, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.SeasonHandle, 1, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // WeekdayParsing
-            // 
-            this.WeekdayParsing.Controls.Add(this.ParsingBut);
-            this.WeekdayParsing.Controls.Add(this.ParseTextBox);
-            this.WeekdayParsing.Controls.Add(this.ParseLabel);
-            this.WeekdayParsing.Controls.Add(this.ValuePaesing);
-            resources.ApplyResources(this.WeekdayParsing, "WeekdayParsing");
-            this.WeekdayParsing.Name = "WeekdayParsing";
-            this.WeekdayParsing.TabStop = false;
-            // 
-            // ParsingBut
-            // 
-            this.ParsingBut.BackColor = System.Drawing.Color.Silver;
-            this.ParsingBut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ParsingBut.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.ParsingBut.FlatAppearance.BorderSize = 2;
-            this.ParsingBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.ParsingBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.ParsingBut, "ParsingBut");
-            this.ParsingBut.Name = "ParsingBut";
-            this.ParsingBut.UseVisualStyleBackColor = false;
-            this.ParsingBut.Click += new System.EventHandler(this.ParsingBut_Click);
-            // 
-            // ParseTextBox
-            // 
-            resources.ApplyResources(this.ParseTextBox, "ParseTextBox");
-            this.ParseTextBox.Name = "ParseTextBox";
-            // 
-            // ParseLabel
-            // 
-            resources.ApplyResources(this.ParseLabel, "ParseLabel");
-            this.ParseLabel.Name = "ParseLabel";
-            // 
-            // ValuePaesing
-            // 
-            resources.ApplyResources(this.ValuePaesing, "ValuePaesing");
-            this.ValuePaesing.Name = "ValuePaesing";
-            // 
-            // SeasonHandle
-            // 
-            this.SeasonHandle.Controls.Add(this.SeasonComboBox);
-            this.SeasonHandle.Controls.Add(this.ChooseSesonLabel);
-            this.SeasonHandle.Controls.Add(this.GoButton);
-            resources.ApplyResources(this.SeasonHandle, "SeasonHandle");
-            this.SeasonHandle.Name = "SeasonHandle";
-            this.SeasonHandle.TabStop = false;
-            // 
-            // SeasonComboBox
-            // 
-            this.SeasonComboBox.FormattingEnabled = true;
-            resources.ApplyResources(this.SeasonComboBox, "SeasonComboBox");
-            this.SeasonComboBox.Name = "SeasonComboBox";
-            // 
-            // ChooseSesonLabel
-            // 
-            resources.ApplyResources(this.ChooseSesonLabel, "ChooseSesonLabel");
-            this.ChooseSesonLabel.Name = "ChooseSesonLabel";
-            // 
-            // GoButton
-            // 
-            this.GoButton.BackColor = System.Drawing.Color.Silver;
-            this.GoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GoButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.GoButton.FlatAppearance.BorderSize = 2;
-            this.GoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.GoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.GoButton, "GoButton");
-            this.GoButton.Name = "GoButton";
-            this.GoButton.UseVisualStyleBackColor = false;
-            this.GoButton.Click += new System.EventHandler(this.GoButtn_Click);
-            // 
-            // Enumeration
-            // 
-            this.Enumeration.Controls.Add(this.IntTextBox);
-            this.Enumeration.Controls.Add(this.ValuesListBox);
-            this.Enumeration.Controls.Add(this.EnumsListBox);
-            this.Enumeration.Controls.Add(this.IntValue);
-            this.Enumeration.Controls.Add(this.ChooseValue);
-            this.Enumeration.Controls.Add(this.ChooseEnumaration);
-            resources.ApplyResources(this.Enumeration, "Enumeration");
-            this.Enumeration.Name = "Enumeration";
-            this.Enumeration.TabStop = false;
-            // 
-            // IntTextBox
-            // 
-            resources.ApplyResources(this.IntTextBox, "IntTextBox");
-            this.IntTextBox.Name = "IntTextBox";
-            // 
-            // ValuesListBox
-            // 
-            this.ValuesListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.ValuesListBox, "ValuesListBox");
-            this.ValuesListBox.Name = "ValuesListBox";
-            this.ValuesListBox.SelectedIndexChanged += new System.EventHandler(this.ValuesListBox_SelectedIndexChanged);
-            // 
-            // EnumsListBox
-            // 
-            this.EnumsListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.EnumsListBox, "EnumsListBox");
-            this.EnumsListBox.Name = "EnumsListBox";
-            this.EnumsListBox.SelectedIndexChanged += new System.EventHandler(this.Enumeration_SelectedIndexChanged);
-            // 
-            // IntValue
-            // 
-            resources.ApplyResources(this.IntValue, "IntValue");
-            this.IntValue.Name = "IntValue";
-            // 
-            // ChooseValue
-            // 
-            resources.ApplyResources(this.ChooseValue, "ChooseValue");
-            this.ChooseValue.Name = "ChooseValue";
-            // 
-            // ChooseEnumaration
-            // 
-            resources.ApplyResources(this.ChooseEnumaration, "ChooseEnumaration");
-            this.ChooseEnumaration.Name = "ChooseEnumaration";
+            fontDialog1 = new FontDialog();
+            tabPage2 = new TabPage();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            moviesControl1 = new View.Blocks.MoviesControl();
+            reactanglesControl2 = new View.Blocks.ReactanglesControl();
+            tabPage1 = new TabPage();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            weekdayControl1 = new View.Blocks.WeekdayControl();
+            seasonControl1 = new View.Blocks.SeasonControl();
+            enumerationControl1 = new View.Blocks.EnumerationControl();
+            Rectangles = new TabControl();
+            Rectaangle = new TabPage();
+            reactanglesCollisionControl1 = new View.Blocks.ReactanglesCollisionControl();
+            process1 = new System.Diagnostics.Process();
+            tabPage2.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            Rectangles.SuspendLayout();
+            Rectaangle.SuspendLayout();
+            SuspendLayout();
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.tableLayoutPanel3);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(tableLayoutPanel3);
+            resources.ApplyResources(tabPage2, "tabPage2");
+            tabPage2.Name = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.RectanglesGroupBox, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.groupBox2, 1, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            resources.ApplyResources(tableLayoutPanel3, "tableLayoutPanel3");
+            tableLayoutPanel3.Controls.Add(moviesControl1, 1, 0);
+            tableLayoutPanel3.Controls.Add(reactanglesControl2, 0, 0);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
-            // RectanglesGroupBox
+            // moviesControl1
             // 
-            this.RectanglesGroupBox.Controls.Add(this.FindButton);
-            this.RectanglesGroupBox.Controls.Add(this.ColorsTextBox);
-            this.RectanglesGroupBox.Controls.Add(this.WidthTextBox);
-            this.RectanglesGroupBox.Controls.Add(this.HeigthTextBox);
-            this.RectanglesGroupBox.Controls.Add(this.ColorsLabel);
-            this.RectanglesGroupBox.Controls.Add(this.WidthLabel);
-            this.RectanglesGroupBox.Controls.Add(this.HeigthLabel);
-            this.RectanglesGroupBox.Controls.Add(this.ReactanglesListBox);
-            resources.ApplyResources(this.RectanglesGroupBox, "RectanglesGroupBox");
-            this.RectanglesGroupBox.Name = "RectanglesGroupBox";
-            this.RectanglesGroupBox.TabStop = false;
-            this.RectanglesGroupBox.Enter += new System.EventHandler(this.RectanglesGroupBox_Enter);
+            resources.ApplyResources(moviesControl1, "moviesControl1");
+            moviesControl1.Name = "moviesControl1";
             // 
-            // FindButton
+            // reactanglesControl2
             // 
-            this.FindButton.BackColor = System.Drawing.Color.Silver;
-            this.FindButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FindButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.FindButton.FlatAppearance.BorderSize = 2;
-            this.FindButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.FindButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.FindButton, "FindButton");
-            this.FindButton.Name = "FindButton";
-            this.FindButton.UseVisualStyleBackColor = false;
+            resources.ApplyResources(reactanglesControl2, "reactanglesControl2");
+            reactanglesControl2.Name = "reactanglesControl2";
             // 
-            // ColorsTextBox
+            // tabPage1
             // 
-            resources.ApplyResources(this.ColorsTextBox, "ColorsTextBox");
-            this.ColorsTextBox.Name = "ColorsTextBox";
-            this.ColorsTextBox.TextChanged += new System.EventHandler(this.ColorsTextBox_TextChanged);
+            tabPage1.Controls.Add(tableLayoutPanel1);
+            resources.ApplyResources(tabPage1, "tabPage1");
+            tabPage1.Name = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
-            // WidthTextBox
+            // tableLayoutPanel1
             // 
-            resources.ApplyResources(this.WidthTextBox, "WidthTextBox");
-            this.WidthTextBox.Name = "WidthTextBox";
+            resources.ApplyResources(tableLayoutPanel1, "tableLayoutPanel1");
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 1);
+            tableLayoutPanel1.Controls.Add(enumerationControl1, 0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // HeigthTextBox
+            // tableLayoutPanel2
             // 
-            resources.ApplyResources(this.HeigthTextBox, "HeigthTextBox");
-            this.HeigthTextBox.Name = "HeigthTextBox";
+            resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
+            tableLayoutPanel2.Controls.Add(weekdayControl1, 0, 0);
+            tableLayoutPanel2.Controls.Add(seasonControl1, 1, 0);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
-            // ColorsLabel
+            // weekdayControl1
             // 
-            resources.ApplyResources(this.ColorsLabel, "ColorsLabel");
-            this.ColorsLabel.Name = "ColorsLabel";
+            resources.ApplyResources(weekdayControl1, "weekdayControl1");
+            weekdayControl1.Name = "weekdayControl1";
             // 
-            // WidthLabel
+            // seasonControl1
             // 
-            resources.ApplyResources(this.WidthLabel, "WidthLabel");
-            this.WidthLabel.Name = "WidthLabel";
+            resources.ApplyResources(seasonControl1, "seasonControl1");
+            seasonControl1.Name = "seasonControl1";
             // 
-            // HeigthLabel
+            // enumerationControl1
             // 
-            resources.ApplyResources(this.HeigthLabel, "HeigthLabel");
-            this.HeigthLabel.Name = "HeigthLabel";
+            resources.ApplyResources(enumerationControl1, "enumerationControl1");
+            enumerationControl1.Name = "enumerationControl1";
             // 
-            // ReactanglesListBox
+            // Rectangles
             // 
-            this.ReactanglesListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.ReactanglesListBox, "ReactanglesListBox");
-            this.ReactanglesListBox.Items.AddRange(new object[] {
-            resources.GetString("ReactanglesListBox.Items"),
-            resources.GetString("ReactanglesListBox.Items1"),
-            resources.GetString("ReactanglesListBox.Items2"),
-            resources.GetString("ReactanglesListBox.Items3"),
-            resources.GetString("ReactanglesListBox.Items4")});
-            this.ReactanglesListBox.Name = "ReactanglesListBox";
-            this.ReactanglesListBox.SelectedIndexChanged += new System.EventHandler(this.ReactanglesListBox_SelectedIndexChanged);
+            Rectangles.Controls.Add(tabPage1);
+            Rectangles.Controls.Add(tabPage2);
+            Rectangles.Controls.Add(Rectaangle);
+            resources.ApplyResources(Rectangles, "Rectangles");
+            Rectangles.Name = "Rectangles";
+            Rectangles.SelectedIndex = 0;
+            Rectangles.Tag = "";
             // 
-            // groupBox2
+            // Rectaangle
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            Rectaangle.Controls.Add(reactanglesCollisionControl1);
+            resources.ApplyResources(Rectaangle, "Rectaangle");
+            Rectaangle.Name = "Rectaangle";
+            Rectaangle.UseVisualStyleBackColor = true;
+            // 
+            // reactanglesCollisionControl1
+            // 
+            resources.ApplyResources(reactanglesCollisionControl1, "reactanglesCollisionControl1");
+            reactanglesCollisionControl1.Name = "reactanglesCollisionControl1";
+            // 
+            // process1
+            // 
+            process1.StartInfo.Domain = "";
+            process1.StartInfo.LoadUserProfile = false;
+            process1.StartInfo.Password = null;
+            process1.StartInfo.StandardErrorEncoding = null;
+            process1.StartInfo.StandardInputEncoding = null;
+            process1.StartInfo.StandardOutputEncoding = null;
+            process1.StartInfo.UserName = "";
+            process1.SynchronizingObject = this;
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Enums);
-            this.Name = "MainForm";
-            this.Enums.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.WeekdayParsing.ResumeLayout(false);
-            this.WeekdayParsing.PerformLayout();
-            this.SeasonHandle.ResumeLayout(false);
-            this.SeasonHandle.PerformLayout();
-            this.Enumeration.ResumeLayout(false);
-            this.Enumeration.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.RectanglesGroupBox.ResumeLayout(false);
-            this.RectanglesGroupBox.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(Rectangles);
+            Name = "MainForm";
+            tabPage2.ResumeLayout(false);
+            tableLayoutPanel3.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            Rectangles.ResumeLayout(false);
+            Rectaangle.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
-        #endregion
+        private void Enumeration_Enter(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
-        private TabControl Enums;
+#endregion
+        private FontDialog fontDialog1;
+        private TabPage tabPage2;
+        private TableLayoutPanel tableLayoutPanel3;
         private TabPage tabPage1;
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
-        private GroupBox WeekdayParsing;
-        private GroupBox SeasonHandle;
-        private GroupBox Enumeration;
-        private TextBox IntTextBox;
-        private Label IntValue;
-        private Label ChooseValue;
-        private Label ChooseEnumaration;
-        private ListBox ValuesListBox;
-        private ListBox EnumsListBox;
-        private Button ParsingBut;
-        private TextBox ParseTextBox;
-        private Label ParseLabel;
-        private Label ValuePaesing;
-        private Label ChooseSesonLabel;
-        private Button GoButton;
-        private ComboBox SeasonComboBox;
-        private TabPage tabPage2;
-        private TableLayoutPanel tableLayoutPanel3;
-        private GroupBox RectanglesGroupBox;
-        private TextBox ColorsTextBox;
-        private TextBox WidthTextBox;
-        private TextBox HeigthTextBox;
-        private Label ColorsLabel;
-        private Label WidthLabel;
-        private Label HeigthLabel;
-        private ListBox ReactanglesListBox;
-        private GroupBox groupBox2;
-        private Button FindButton;
-        private FontDialog fontDialog1;
+        private TabControl Rectangles;
+        private System.Diagnostics.Process process1;
+        private TabPage Rectaangle;
+        private View.Blocks.ReactanglesCollisionControl reactanglesCollisionControl1;
+        private View.Blocks.MoviesControl moviesControl1;
+        private View.Blocks.ReactanglesControl reactanglesControl1;
+        private View.Blocks.EnumerationControl enumerationControl1;
+        private View.Blocks.WeekdayControl weekdayControl1;
+        private View.Blocks.ReactanglesControl reactanglesControl2;
+        private View.Blocks.SeasonControl seasonControl1;
     }
 }

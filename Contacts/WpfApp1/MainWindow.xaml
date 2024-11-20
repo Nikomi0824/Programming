@@ -1,0 +1,100 @@
+﻿<Window x:Class="Contacts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Contacts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        MinHeight="450" MinWidth="800"
+        Margin="15">
+    <Window.Resources>
+        <ControlTemplate x:Key="validationFailed">
+            <StackPanel Orientation="Horizontal">
+                <Border BorderBrush="Violet" BorderThickness="2">
+                    <AdornedElementPlaceholder />
+                </Border>
+                <TextBlock Foreground="Red" FontSize="26" FontWeight="Bold">!</TextBlock>
+            </StackPanel>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid Margin="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.15*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Edit contact" Grid.Column="0" Grid.Row="0">
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock x:Name="NameTextBlock" Text="Name:" />
+                <TextBox x:Name="NameEditTextBox">
+                    <TextBox.Text>
+                        <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock x:Name="PhoneNumberTextBlock" Text="Phone Number:" />
+                <TextBox x:Name="PhoneNumberEditTextBox">
+                    <TextBox.Text>
+                        <Binding Path="PhoneNumber" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBlock x:Name="EmailTextBlock" Text="Email:" />
+                <TextBox x:Name="EmailEditTextBox">
+                    <TextBox.Text>
+                        <Binding Path="Email" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Read contact" Grid.Column="1" Grid.Row="0">
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <TextBlock Text="{Binding Text, ElementName=NameTextBlock}"/>
+                <TextBlock x:Name="NameReadTextBlock" Text="{Binding Text, ElementName=NameEditTextBox}"/>
+                <TextBlock Text="{Binding Text, ElementName=PhoneNumberTextBlock}"/>
+                <TextBlock x:Name="PhoneNumberReadTextBlock" Text="{Binding Text, ElementName=PhoneNumberEditTextBox}"/>
+                <TextBlock Text="{Binding Text, ElementName=EmailTextBlock}"/>
+                <TextBlock x:Name="EmailReadTextBlock" Text="{Binding Text, ElementName=EmailEditTextBox}"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Column="1" Grid.Row="1">
+            <Grid x:Name="ButtonsGroupBox">
+                <Button x:Name="SaveButton" Content="Save" Grid.Column="1" Margin="5,5,85,5" Width="75" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" Command="{Binding SaveCommand}"/>
+                <Button x:Name="LoadButton" Content="Load" Grid.Column="2" Margin="5,5,5,5" Width="75" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" Command="{Binding LoadCommand}"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
