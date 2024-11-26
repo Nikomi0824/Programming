@@ -11,6 +11,6 @@
         public MainForm()
         {
             InitializeComponent();
-        }  
+        }
     }
 }
