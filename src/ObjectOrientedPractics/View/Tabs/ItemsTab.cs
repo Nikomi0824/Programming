@@ -49,6 +49,19 @@ namespace ObjectOrientedPractics.View.Tabs
             InitializeComboBoxes();
         }
 
+        /// <summary>
+        /// При переходе на эту вкладку обновляет все элементы управления актуальными значениями.
+        /// </summary>
+        public void RefreshData()
+        {
+            FindTextBox.Clear();
+            DisplayedItems = null;
+            ItemsListBox.DataSource = null;
+            ItemsListBox.DataSource = Items;
+            ItemsListBox.DisplayMember = nameof(Item.DisplayInfo);
+            OrderByComboBox.SelectedIndex = 0;
+        }
+
         private void InitializeComboBoxes()
         {
             CategoryComboBox.Items.AddRange(Enum.GetNames(typeof(Category)));

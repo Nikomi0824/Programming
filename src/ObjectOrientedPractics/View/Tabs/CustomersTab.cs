@@ -16,7 +16,7 @@ namespace ObjectOrientedPractics.View.Tabs
     /// <summary>
     /// Содержит логику вкладки покупателей.
     /// </summary>
-    public partial class Customers : UserControl
+    public partial class CustomersTab : UserControl
     {
         /// <summary>
         /// Выбранный покупатель.
@@ -32,7 +32,7 @@ namespace ObjectOrientedPractics.View.Tabs
         /// Создает объект типа <see cref="CustomersTab"/>.
         /// Выводит в CustomersListBox только имена покупателей.
         /// </summary>
-        public Customers()
+        public CustomersTab()
         {
             InitializeComponent();
             CustomersListBox.DisplayMember = nameof(Customer.DisplayInfo);
@@ -43,8 +43,8 @@ namespace ObjectOrientedPractics.View.Tabs
         /// </summary>
         public void RefreshData()
         {
-            /*DiscountsListBox.DisplayMember = null;
-            DiscountsListBox.DisplayMember = nameof(IDiscount.Info);*/
+            DiscountsListBox.DisplayMember = null;
+            DiscountsListBox.DisplayMember = nameof(IDiscount.Info);
         }
 
         /// <summary>
@@ -64,10 +64,10 @@ namespace ObjectOrientedPractics.View.Tabs
         {
             IDTextBox.Text = customer.Id.ToString();
             FullNameTextBox.Text = customer.FullName;
-           /* AddressControl.Address = customer.Address;*/
+            AddressControl.Address = customer.Address;
             IsPriorityCheckBox.Checked = customer.IsPriority;
-            /*DiscountsListBox.DataSource = customer.Discount;
-            DiscountsListBox.DisplayMember = nameof(IDiscount.Info);*/
+            DiscountsListBox.DataSource = customer.Discount;
+            DiscountsListBox.DisplayMember = nameof(IDiscount.Info);
         }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace ObjectOrientedPractics.View.Tabs
             IDTextBox.Clear();
             FullNameTextBox.Clear();
             FullNameTextBox.BackColor = Color.White;
-            //DiscountsListBox.DataSource = null;
+            DiscountsListBox.DataSource = null;
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace ObjectOrientedPractics.View.Tabs
             else
             {
                 ClearCustomerInfo();
-                //AddressControl.ClearAllTextBoxes(true);
+                AddressControl.ClearAllTextBoxes(true);
             }
         }
 
@@ -171,9 +171,9 @@ namespace ObjectOrientedPractics.View.Tabs
         /// <summary>
         /// Добавляет новую скидку.
         /// </summary>
-        /*private void AddDiscountButton_Click(object sender, EventArgs e)
+        private void AddDiscountButton_Click(object sender, EventArgs e)
         {
-            if (CustomersListBox.SelectedIndex != -1)
+            if (_currentCustomer != null && _currentCustomer.Discount != null)
             {
                 AddDiscountForm addDiscountForm = new AddDiscountForm();
                 if (addDiscountForm.ShowDialog() == DialogResult.OK)
@@ -181,19 +181,21 @@ namespace ObjectOrientedPractics.View.Tabs
                     _currentCustomer.Discount.Add(addDiscountForm.PercentDiscount);
                 }
             }
-        }*/
+        }
 
         /// <summary>
         /// Удаляет скидку.
         /// </summary>
-       /* private void RemoveDiscountButton_Click(object sender, EventArgs e)
+        private void RemoveDiscountButton_Click(object sender, EventArgs e)
         {
             if (DiscountsListBox.SelectedIndex == 0 || CustomersListBox.SelectedIndex == -1)
             {
                 return;
             }
             _currentCustomer.Discount.RemoveAt(DiscountsListBox.SelectedIndex);
-        }*/
+        }
+
+       
     }
 }
 

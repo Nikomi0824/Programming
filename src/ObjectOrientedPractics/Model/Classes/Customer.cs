@@ -2,9 +2,6 @@
 using ObjectOrientedPractics.Model.Orders;
 using ObjectOrientedPractics.Services;
 using System.ComponentModel;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using System.Net;
-using System.Reflection.Emit;
 
 namespace ObjectOrientedPractics.Model
 {
@@ -49,7 +46,7 @@ namespace ObjectOrientedPractics.Model
         /// <summary>
         /// Возвращает и задает список заказов покупателя.
         /// </summary>
-        //public BindingList<Order> Order { get; set; } = new BindingList<Order>();
+        public BindingList<Order> Order { get; set; } = new BindingList<Order>();
 
         /// <summary>
         /// Возвращает и задает свойство покупателя, определяющее его как приоритетного.
@@ -79,6 +76,7 @@ namespace ObjectOrientedPractics.Model
         {
             Id = IdGenerator.GetNextId();
             Discount.Add(new PointsDiscount());
+
         }
 
         /// <summary>
