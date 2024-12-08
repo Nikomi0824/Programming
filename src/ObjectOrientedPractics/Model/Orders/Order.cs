@@ -23,12 +23,13 @@ namespace ObjectOrientedPractics.Model.Orders
         /// <summary>
         /// Возвращает дату создания заказа.
         /// </summary>
-        public string Date { get; private set; }
+        public string Date { get;  set; }
 
         /// <summary>
         /// Возвращает и задает статус заказа.
         /// </summary>
         public OrderStatus OrderStatus { get; set; }
+
 
         /// <summary>
         /// Возвращает и задает адрес доставки.
