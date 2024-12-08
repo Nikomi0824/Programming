@@ -73,7 +73,7 @@
             SelectedItemsGroupBox.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             SelectedItemsGroupBox.Location = new Point(485, 3);
             SelectedItemsGroupBox.Name = "SelectedItemsGroupBox";
-            SelectedItemsGroupBox.Size = new Size(476, 703);
+            SelectedItemsGroupBox.Size = new Size(476, 715);
             SelectedItemsGroupBox.TabIndex = 4;
             SelectedItemsGroupBox.TabStop = false;
             SelectedItemsGroupBox.Text = "Selected Items";
@@ -229,8 +229,8 @@
             ItemsTableLayoutPanel.Margin = new Padding(5);
             ItemsTableLayoutPanel.Name = "ItemsTableLayoutPanel";
             ItemsTableLayoutPanel.RowCount = 2;
-            ItemsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 88.8888855F));
-            ItemsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
+            ItemsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 90.3508759F));
+            ItemsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.649123F));
             ItemsTableLayoutPanel.Size = new Size(964, 798);
             ItemsTableLayoutPanel.TabIndex = 1;
             // 
@@ -242,7 +242,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 151F));
             tableLayoutPanel1.Controls.Add(RemoveButton, 1, 0);
             tableLayoutPanel1.Controls.Add(AddButton, 0, 0);
-            tableLayoutPanel1.Location = new Point(10, 712);
+            tableLayoutPanel1.Location = new Point(10, 724);
             tableLayoutPanel1.Margin = new Padding(10, 3, 3, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;

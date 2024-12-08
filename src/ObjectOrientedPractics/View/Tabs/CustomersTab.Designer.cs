@@ -1,6 +1,6 @@
 ﻿namespace ObjectOrientedPractics.View.Tabs
 {
-    partial class Customers
+    partial class CustomersTab
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -40,11 +40,16 @@
             IDTextBox = new TextBox();
             FullNameLabel = new Label();
             IDLabel = new Label();
-            groupBox1 = new GroupBox();
+            DiscountGroupBox = new GroupBox();
+            RemoveDiscountButton = new Button();
+            AddDiscountButton = new Button();
+            DiscountsListBox = new ListBox();
+            AddressControl = new Controls.AddressControl();
             tableLayoutPanel1.SuspendLayout();
             ItemsTableLayoutPanel.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SelectedCustomerGroupBox.SuspendLayout();
+            DiscountGroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // AddButton
@@ -65,17 +70,17 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 151F));
             tableLayoutPanel1.Controls.Add(RemoveButton, 1, 0);
             tableLayoutPanel1.Controls.Add(AddButton, 0, 0);
-            tableLayoutPanel1.Location = new Point(10, 781);
+            tableLayoutPanel1.Location = new Point(10, 892);
             tableLayoutPanel1.Margin = new Padding(10, 3, 3, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(542, 67);
+            tableLayoutPanel1.Size = new Size(538, 67);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // RemoveButton
             // 
-            RemoveButton.Location = new Point(193, 3);
+            RemoveButton.Location = new Point(191, 3);
             RemoveButton.Name = "RemoveButton";
             RemoveButton.Size = new Size(149, 59);
             RemoveButton.TabIndex = 0;
@@ -86,8 +91,8 @@
             // ItemsTableLayoutPanel
             // 
             ItemsTableLayoutPanel.ColumnCount = 2;
-            ItemsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            ItemsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            ItemsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42.7795029F));
+            ItemsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 57.2204971F));
             ItemsTableLayoutPanel.Controls.Add(tableLayoutPanel1, 0, 1);
             ItemsTableLayoutPanel.Controls.Add(CustomersListBox, 0, 0);
             ItemsTableLayoutPanel.Controls.Add(tableLayoutPanel2, 1, 0);
@@ -98,7 +103,7 @@
             ItemsTableLayoutPanel.RowCount = 2;
             ItemsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 90.25522F));
             ItemsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.74478F));
-            ItemsTableLayoutPanel.Size = new Size(1111, 862);
+            ItemsTableLayoutPanel.Size = new Size(1288, 986);
             ItemsTableLayoutPanel.TabIndex = 2;
             // 
             // CustomersListBox
@@ -109,7 +114,7 @@
             CustomersListBox.Location = new Point(15, 15);
             CustomersListBox.Margin = new Padding(15);
             CustomersListBox.Name = "CustomersListBox";
-            CustomersListBox.Size = new Size(525, 729);
+            CustomersListBox.Size = new Size(521, 854);
             CustomersListBox.TabIndex = 3;
             CustomersListBox.SelectedIndexChanged += CustomersListBox_SelectedIndexChanged;
             // 
@@ -118,15 +123,16 @@
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(SelectedCustomerGroupBox, 0, 0);
-            tableLayoutPanel2.Controls.Add(groupBox1, 0, 2);
+            tableLayoutPanel2.Controls.Add(DiscountGroupBox, 0, 2);
+            tableLayoutPanel2.Controls.Add(AddressControl, 0, 1);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(558, 3);
+            tableLayoutPanel2.Location = new Point(554, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 3;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 40.6504059F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 59.3495941F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 254F));
-            tableLayoutPanel2.Size = new Size(550, 772);
+            tableLayoutPanel2.Size = new Size(731, 883);
             tableLayoutPanel2.TabIndex = 10;
             // 
             // SelectedCustomerGroupBox
@@ -137,10 +143,10 @@
             SelectedCustomerGroupBox.Controls.Add(FullNameLabel);
             SelectedCustomerGroupBox.Controls.Add(IDLabel);
             SelectedCustomerGroupBox.Dock = DockStyle.Fill;
-            SelectedCustomerGroupBox.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
+            SelectedCustomerGroupBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             SelectedCustomerGroupBox.Location = new Point(3, 3);
             SelectedCustomerGroupBox.Name = "SelectedCustomerGroupBox";
-            SelectedCustomerGroupBox.Size = new Size(544, 204);
+            SelectedCustomerGroupBox.Size = new Size(725, 249);
             SelectedCustomerGroupBox.TabIndex = 5;
             SelectedCustomerGroupBox.TabStop = false;
             SelectedCustomerGroupBox.Text = "Selected Customer";
@@ -194,28 +200,70 @@
             IDLabel.TabIndex = 0;
             IDLabel.Text = "ID:";
             // 
-            // groupBox1
+            // DiscountGroupBox
             // 
-            groupBox1.Dock = DockStyle.Fill;
-            groupBox1.Location = new Point(3, 520);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(544, 249);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            DiscountGroupBox.Controls.Add(RemoveDiscountButton);
+            DiscountGroupBox.Controls.Add(AddDiscountButton);
+            DiscountGroupBox.Controls.Add(DiscountsListBox);
+            DiscountGroupBox.Dock = DockStyle.Fill;
+            DiscountGroupBox.Location = new Point(3, 631);
+            DiscountGroupBox.Name = "DiscountGroupBox";
+            DiscountGroupBox.Size = new Size(725, 249);
+            DiscountGroupBox.TabIndex = 6;
+            DiscountGroupBox.TabStop = false;
+            DiscountGroupBox.Text = "Discounts:";
             // 
-            // Customers
+            // RemoveDiscountButton
+            // 
+            RemoveDiscountButton.Location = new Point(365, 105);
+            RemoveDiscountButton.Name = "RemoveDiscountButton";
+            RemoveDiscountButton.Size = new Size(141, 69);
+            RemoveDiscountButton.TabIndex = 2;
+            RemoveDiscountButton.Text = "Remove ";
+            RemoveDiscountButton.UseVisualStyleBackColor = true;
+            RemoveDiscountButton.Click += RemoveDiscountButton_Click;
+            // 
+            // AddDiscountButton
+            // 
+            AddDiscountButton.Location = new Point(365, 30);
+            AddDiscountButton.Name = "AddDiscountButton";
+            AddDiscountButton.Size = new Size(141, 69);
+            AddDiscountButton.TabIndex = 1;
+            AddDiscountButton.Text = "Add";
+            AddDiscountButton.UseVisualStyleBackColor = true;
+            AddDiscountButton.Click += AddDiscountButton_Click;
+            // 
+            // DiscountsListBox
+            // 
+            DiscountsListBox.FormattingEnabled = true;
+            DiscountsListBox.ItemHeight = 25;
+            DiscountsListBox.Location = new Point(24, 30);
+            DiscountsListBox.Name = "DiscountsListBox";
+            DiscountsListBox.Size = new Size(335, 179);
+            DiscountsListBox.TabIndex = 0;
+            // 
+            // AddressControl
+            // 
+            AddressControl.Address = null;
+            AddressControl.Dock = DockStyle.Fill;
+            AddressControl.Location = new Point(3, 258);
+            AddressControl.Name = "AddressControl";
+            AddressControl.Size = new Size(725, 367);
+            AddressControl.TabIndex = 7;
+            // 
+            // CustomersTab
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(ItemsTableLayoutPanel);
-            Name = "Customers";
-            Size = new Size(1111, 862);
+            Name = "CustomersTab";
+            Size = new Size(1288, 986);
             tableLayoutPanel1.ResumeLayout(false);
             ItemsTableLayoutPanel.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             SelectedCustomerGroupBox.ResumeLayout(false);
             SelectedCustomerGroupBox.PerformLayout();
+            DiscountGroupBox.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -240,10 +288,14 @@
         private TextBox IDTextBox;
         private Label FullNameLabel;
         private Label IDLabel;
-        private GroupBox groupBox1;
+        private GroupBox DiscountGroupBox;
         private TextBox NameTextBox;
         private TextBox CostTextBox;
         private Label DescriptionLabel;
         private Label NameLabel;
+        private Button RemoveDiscountButton;
+        private Button AddDiscountButton;
+        private ListBox DiscountsListBox;
+        private Controls.AddressControl AddressControl;
     }
 }
