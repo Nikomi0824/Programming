@@ -41,6 +41,7 @@
             OrdersTabPage = new TabPage();
             OrdersTab = new View.Tabs.OrdersTab();
             PriorityOrdersTabPage = new TabPage();
+            priorityOrdersTab1 = new View.Tabs.PriorityOrdersTab();
             TabControl.SuspendLayout();
             ItemsTabPage.SuspendLayout();
             CustomersTabPage.SuspendLayout();
@@ -147,6 +148,7 @@
             // 
             // PriorityOrdersTabPage
             // 
+            PriorityOrdersTabPage.Controls.Add(priorityOrdersTab1);
             PriorityOrdersTabPage.Location = new Point(4, 34);
             PriorityOrdersTabPage.Name = "PriorityOrdersTabPage";
             PriorityOrdersTabPage.Padding = new Padding(3);
@@ -154,7 +156,27 @@
             PriorityOrdersTabPage.TabIndex = 4;
             PriorityOrdersTabPage.Text = "PriorityOrders";
             PriorityOrdersTabPage.UseVisualStyleBackColor = true;
-
+            // 
+            // priorityOrdersTab1
+            // 
+            priorityOrdersTab1.Dock = DockStyle.Fill;
+            priorityOrdersTab1.Location = new Point(3, 3);
+            priorityOrdersTab1.Name = "priorityOrdersTab1";
+            address1.Apartment = "44";
+            address1.Building = "40";
+            address1.City = "92";
+            address1.Country = "11";
+            address1.Index = 249783;
+            address1.Street = "93";
+            priorityOrder1.Address = address1;
+            priorityOrder1.Date = "9:00 - 11:00";
+            priorityOrder1.DesiredDeliveryDate = new DateTime(2024, 12, 8, 23, 15, 10, 478);
+            priorityOrder1.DesiredDeliveryTime = "9:00 - 11:00";
+            priorityOrder1.DiscountAmount = 0D;
+            priorityOrder1.OrderStatus = Model.Enums.OrderStatus.New;
+            priorityOrdersTab1.Order = priorityOrder1;
+            priorityOrdersTab1.Size = new Size(1368, 1049);
+            priorityOrdersTab1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -188,5 +210,6 @@
         private View.Tabs.ItemsTab ItemsTab;
         private View.CartsTab CartsTab;
         private View.Tabs.OrdersTab OrdersTab;
+        private View.Tabs.PriorityOrdersTab priorityOrdersTab1;
     }
 }
