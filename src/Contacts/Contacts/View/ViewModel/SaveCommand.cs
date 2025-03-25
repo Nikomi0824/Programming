@@ -1,15 +1,15 @@
-using System;
+﻿using System;
 using System.Windows.Input;
 using Contacts.Model.Services;
 using Contacts.Model;
 
 namespace Contacts.ViewModel
 {
-    public class SaveCommand : ICommand
+    internal class SaveCommand : ICommand
     {
         private readonly Contact _contact;
 
-        public SaveCommand(Contact contact)
+        internal SaveCommand(Contact contact)
         {
             _contact = contact;
         }
