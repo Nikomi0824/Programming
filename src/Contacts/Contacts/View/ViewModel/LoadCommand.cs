@@ -1,15 +1,15 @@
-using System;
+﻿using System;
 using System.Windows.Input;
 using Contacts.Model.Services;
 using Contacts.Model;
 
 namespace Contacts.ViewModel
 {
-    public class LoadCommand : ICommand
+    internal class LoadCommand : ICommand
     {
         private readonly Action<Contact> _setContact;
 
-        public LoadCommand(Action<Contact> setContact)
+        internal LoadCommand(Action<Contact> setContact)
         {
             _setContact = setContact;
         }
