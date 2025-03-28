@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
 using ProgrammingAppInformationSystem;
+using ProgrammingAppInformationSystem.Model;
 
 public class MainViewModel : INotifyPropertyChanged
 {
@@ -44,6 +45,7 @@ public class MainViewModel : INotifyPropertyChanged
         {
             _editingContact = value;
             OnPropertyChanged();
+            OnPropertyChanged(nameof(CanApply));
         }
     }
 
@@ -55,6 +57,7 @@ public class MainViewModel : INotifyPropertyChanged
             _isEditing = value;
             OnPropertyChanged();
             OnPropertyChanged(nameof(IsNotEditing));
+            OnPropertyChanged(nameof(CanApply));
             CommandManager.InvalidateRequerySuggested();
         }
     }
@@ -62,6 +65,8 @@ public class MainViewModel : INotifyPropertyChanged
     public bool IsNotEditing => !IsEditing;
 
     public bool HasSelectedContact => SelectedContact != null;
+
+    public bool CanApply => IsEditing && EditingContact != null && !EditingContact.HasErrors;
 
     public ICommand AddCommand { get; }
     public ICommand EditCommand { get; }
@@ -73,7 +78,7 @@ public class MainViewModel : INotifyPropertyChanged
         AddCommand = new RelayCommand(_ => StartAdd(), _ => IsNotEditing);
         EditCommand = new RelayCommand(_ => StartEdit(), _ => IsNotEditing && HasSelectedContact);
         RemoveCommand = new RelayCommand(_ => RemoveContact(), _ => IsNotEditing && HasSelectedContact);
-        ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => IsEditing);
+        ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => CanApply);
 
         LoadContacts();
     }
