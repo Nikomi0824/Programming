@@ -73,7 +73,7 @@ public class MainViewModel : INotifyPropertyChanged
         AddCommand = new RelayCommand(_ => StartAdd(), _ => IsNotEditing);
         EditCommand = new RelayCommand(_ => StartEdit(), _ => IsNotEditing && HasSelectedContact);
         RemoveCommand = new RelayCommand(_ => RemoveContact(), _ => IsNotEditing && HasSelectedContact);
-        ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => IsEditing);
+        ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => CanApplyChanges());
 
         LoadContacts();
     }
@@ -189,6 +189,11 @@ public class MainViewModel : INotifyPropertyChanged
         {
             MessageBox.Show($"Failed to save contacts: {ex.Message}");
         }
+    }
+
+    private bool CanApplyChanges()
+    {
+        return IsEditing && EditingContact != null && !((INotifyDataErrorInfo)EditingContact).HasErrors;
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
