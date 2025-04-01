@@ -54,7 +54,8 @@
             <!-- Search section -->
             <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="8" VerticalAlignment="Center">
                 <Label Content="Find:" Margin="3,0,3,0" VerticalAlignment="Center"/>
-                <TextBox Width="150" Height="25" VerticalAlignment="Center"/>
+                <TextBox Width="150" Height="25" VerticalAlignment="Center"
+                    Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
 
             <!-- Contacts list - CORRECTED VERSION -->
