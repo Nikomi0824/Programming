@@ -58,6 +58,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\Controls\ContactControl.xaml.cs">
+      <DependentUpon>ContactControl.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,11 +73,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\Controls\ContactControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\BooleanToVisibilityConverter.cs" />
-    <Compile Include="Model\RelayCommand.cs" />
-    <Compile Include="Model\ContactSerializer.cs" />
+    <Compile Include="Model\Services\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Model\Services\RelayCommand.cs" />
+    <Compile Include="Model\Services\ContactSerializer.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -102,8 +109,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ViewModel\contacts_96x96.ico" />
-    <Resource Include="ViewModel\photo_placeholder_100x100.png" />
+    <Resource Include="Resources\contacts_96x96.ico" />
+    <Resource Include="Resources\photo_placeholder_100x100.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

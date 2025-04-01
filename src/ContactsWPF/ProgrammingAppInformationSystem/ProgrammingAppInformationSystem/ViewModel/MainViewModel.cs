@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Data;
 using ProgrammingAppInformationSystem;
 
 public class MainViewModel : INotifyPropertyChanged
@@ -14,6 +15,20 @@ public class MainViewModel : INotifyPropertyChanged
     private Contact _selectedContact;
     private Contact _editingContact;
     private bool _isEditing;
+    private string _searchText = string.Empty;
+
+    private ICollectionView _contactsView;
+
+    public string SearchText
+    {
+        get => _searchText;
+        set
+        {
+            _searchText = value;
+            OnPropertyChanged();
+            _contactsView?.Refresh();
+        }
+    }
 
     public ObservableCollection<Contact> Contacts { get; } = new ObservableCollection<Contact>();
 
@@ -70,12 +85,38 @@ public class MainViewModel : INotifyPropertyChanged
 
     public MainViewModel()
     {
+        _contactsView = CollectionViewSource.GetDefaultView(Contacts);
+        _contactsView.Filter = FilterContacts;
+
+        this.PropertyChanged += (s, e) =>
+            {
+                if (e.PropertyName == nameof(SearchText))
+                {
+                    _contactsView.Refresh();
+                }
+            };
+
         AddCommand = new RelayCommand(_ => StartAdd(), _ => IsNotEditing);
         EditCommand = new RelayCommand(_ => StartEdit(), _ => IsNotEditing && HasSelectedContact);
         RemoveCommand = new RelayCommand(_ => RemoveContact(), _ => IsNotEditing && HasSelectedContact);
-        ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => IsEditing);
+        ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => CanApplyChanges());
 
         LoadContacts();
+    }
+
+    private bool FilterContacts(object item)
+    {
+        if (string.IsNullOrWhiteSpace(_searchText))
+            return true;
+
+        if (item is Contact contact)
+        {
+            return (contact.Name?.IndexOf(_searchText, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0 ||
+                   (contact.Email?.IndexOf(_searchText, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0 ||
+                   (contact.Phone?.IndexOf(_searchText, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0;
+        }
+
+        return false;
     }
 
     private void StartAdd()
@@ -189,6 +230,11 @@ public class MainViewModel : INotifyPropertyChanged
         {
             MessageBox.Show($"Failed to save contacts: {ex.Message}");
         }
+    }
+
+    private bool CanApplyChanges()
+    {
+        return IsEditing && EditingContact != null && !((INotifyDataErrorInfo)EditingContact).HasErrors;
     }
 
     public event PropertyChangedEventHandler PropertyChanged;

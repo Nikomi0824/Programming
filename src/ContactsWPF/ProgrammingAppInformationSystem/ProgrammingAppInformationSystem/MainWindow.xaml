@@ -7,10 +7,33 @@
         xmlns:model="clr-namespace:ProgrammingAppInformationSystem.Model"
         mc:Ignorable="d"
         Title="Contact Manager" Height="450" Width="800" MinHeight="450" MinWidth="800"
-        Icon="\ViewModel\contacts_96x96.ico">
+        Icon="\Resources\contacts_96x96.ico">
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
+        
+        <DataTemplate x:Key="ContactListItemTemplate">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Image Grid.RowSpan="2" Width="40" Height="40" Margin="0,0,10,0"
+                       Source="/Resources/photo_placeholder_100x100.png"/>
+                
+                <TextBlock Grid.Column="1" Grid.Row="0" 
+                           Text="{Binding Name}" 
+                           FontWeight="SemiBold"/>
+                <TextBlock Grid.Column="1" Grid.Row="1" 
+                           Text="{Binding Phone}" 
+                           Foreground="Gray"/>
+            </Grid>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid>
@@ -28,16 +51,19 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <!-- Search section - now in one line -->
+            <!-- Search section -->
             <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="8" VerticalAlignment="Center">
                 <Label Content="Find:" Margin="3,0,3,0" VerticalAlignment="Center"/>
-                <TextBox Width="150" Height="25" VerticalAlignment="Center"/>
+                <TextBox Width="150" Height="25" VerticalAlignment="Center"
+                    Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
 
-            <!-- Contacts list -->
-            <ListBox Grid.Row="1" Margin="8" ItemsSource="{Binding Contacts}" 
-                    SelectedItem="{Binding SelectedContact}" 
-                    DisplayMemberPath="Name"/>
+            <!-- Contacts list - CORRECTED VERSION -->
+            <ListBox Grid.Row="1" 
+                     Margin="8" 
+                     ItemsSource="{Binding Contacts}" 
+                     SelectedItem="{Binding SelectedContact}"
+                     ItemTemplate="{StaticResource ContactListItemTemplate}"/>
 
             <!-- Buttons at the bottom -->
             <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
@@ -68,7 +94,7 @@
 
                 <!-- Photo placeholder -->
                 <Image Grid.Row="0" Grid.Column="0" Width="100" Height="100" Margin="3" 
-                            Source="\ViewModel\photo_placeholder_100x100.png"
+                            Source="\Resources\photo_placeholder_100x100.png"
                             Grid.RowSpan="2"/>
 
                 <!-- Name and Email closer together -->
