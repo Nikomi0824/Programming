@@ -8,13 +8,37 @@ using System.Text.RegularExpressions;
 
 namespace Contacts.Model
 {
+    /// <summary>
+    /// Представляет контактную информацию, включая имя, телефон и email.
+    /// Реализует интерфейсы INotifyPropertyChanged и INotifyDataErrorInfo для поддержки
+    /// уведомлений об изменении свойств и валидации данных в реальном времени.
+    /// </summary>
     public class Contact : INotifyPropertyChanged, INotifyDataErrorInfo
     {
         private readonly Dictionary<string, List<string>> _errors = new Dictionary<string, List<string>>();
+
+        /// <summary>
+        /// Имя контакта.
+        /// </summary>
         private string _name;
+
+        /// <summary>
+        /// Почта контакта.
+        /// </summary>
         private string _email;
+
+        /// <summary>
+        /// Номер телефона контакта.
+        /// </summary>
         private string _phone;
 
+        /// <summary>
+        /// Получает или задает имя контакта.
+        /// При установке значения автоматически выполняется валидация и уведомление об изменении.
+        /// </summary>
+        /// <remarks>
+        /// Имя должно быть не пустым и не превышать 100 символов.
+        /// </remarks>
         public string Name
         {
             get => _name;
@@ -26,6 +50,13 @@ namespace Contacts.Model
             }
         }
 
+        /// <summary>
+        /// Получает или задает email контакта.
+        /// При установке значения автоматически выполняется валидация и уведомление об изменении.
+        /// </summary>
+        /// <remarks>
+        /// Email должен содержать символ '@', быть не пустым и не превышать 100 символов.
+        /// </remarks>
         public string Email
         {
             get => _email;
@@ -37,6 +68,14 @@ namespace Contacts.Model
             }
         }
 
+        /// <summary>
+        /// Получает или задает телефонный номер контакта.
+        /// При установке значения автоматически выполняется валидация и уведомление об изменении.
+        /// </summary>
+        /// <remarks>
+        /// Номер телефона должен содержать только цифры и символы +-(), быть не пустым
+        /// и не превышать 100 символов.
+        /// </remarks>
         public string Phone
         {
             get => _phone;
@@ -48,6 +87,9 @@ namespace Contacts.Model
             }
         }
 
+        /// <summary>
+        /// Выполняет валидацию имени контакта.
+        /// </summary>
         private void ValidateName()
         {
             ClearErrors(nameof(Name));
@@ -57,6 +99,9 @@ namespace Contacts.Model
                 AddError(nameof(Name), "Name must not exceed 100 characters.");
         }
 
+        /// <summary>
+        /// Выполняет валидацию email контакта.
+        /// </summary>
         private void ValidateEmail()
         {
             ClearErrors(nameof(Email));
@@ -68,6 +113,9 @@ namespace Contacts.Model
                 AddError(nameof(Email), "Email must contain '@' symbol.");
         }
 
+        /// <summary>
+        /// Выполняет валидацию телефонного номера контакта.
+        /// </summary>
         private void ValidatePhone()
         {
             ClearErrors(nameof(Phone));
@@ -79,6 +127,11 @@ namespace Contacts.Model
                 AddError(nameof(Phone), "Phone number can only contain digits and +-() characters.");
         }
 
+        /// <summary>
+        /// Добавляет сообщение об ошибке для указанного свойства.
+        /// </summary>
+        /// <param name="propertyName">Имя свойства, для которого добавляется ошибка.</param>
+        /// <param name="error">Сообщение об ошибке.</param>
         private void AddError(string propertyName, string error)
         {
             if (!_errors.ContainsKey(propertyName))
@@ -91,6 +144,10 @@ namespace Contacts.Model
             }
         }
 
+        /// <summary>
+        /// Очищает все ошибки для указанного свойства.
+        /// </summary>
+        /// <param name="propertyName">Имя свойства, для которого очищаются ошибки.</param>
         private void ClearErrors(string propertyName)
         {
             if (_errors.ContainsKey(propertyName))
@@ -100,16 +157,35 @@ namespace Contacts.Model
             }
         }
 
+        /// <summary>
+        /// Возвращает значение, указывающее, есть ли ошибки валидации.
+        /// </summary>
         public bool HasErrors => _errors.Any();
 
+        /// <summary>
+        /// Событие, возникающее при изменении ошибок валидации.
+        /// </summary>
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+
+        /// <summary>
+        /// Событие, возникающее при изменении значения свойства.
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// Возвращает список ошибок для указанного свойства.
+        /// </summary>
+        /// <param name="propertyName">Имя свойства, для которого запрашиваются ошибки.</param>
+        /// <returns>Список сообщений об ошибках или null, если ошибок нет.</returns>
         public IEnumerable GetErrors(string propertyName)
         {
             return _errors.ContainsKey(propertyName) ? _errors[propertyName] : null;
         }
 
+        /// <summary>
+        /// Вызывает событие PropertyChanged для уведомления об изменении свойства.
+        /// </summary>
+        /// <param name="propertyName">Имя изменившегося свойства.</param>
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

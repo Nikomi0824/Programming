@@ -9,9 +9,14 @@ using System.Windows.Input;
 using System.Windows.Data;
 using ProgrammingAppInformationSystem;
 
+/// <summary>
+/// ViewModel главного окна приложения, управляющая коллекцией контактов
+/// и предоставляющая команды для работы с ними.
+/// </summary>
 public class MainViewModel : INotifyPropertyChanged
 {
     private const string ContactsFilePath = "contacts.xml";
+
     private Contact _selectedContact;
     private Contact _editingContact;
     private bool _isEditing;
@@ -19,6 +24,9 @@ public class MainViewModel : INotifyPropertyChanged
 
     private ICollectionView _contactsView;
 
+    /// <summary>
+    /// Текст для поиска контактов
+    /// </summary>
     public string SearchText
     {
         get => _searchText;
@@ -30,8 +38,14 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Коллекция контактов (ObservableCollection для автоматического обновления UI)
+    /// </summary>
     public ObservableCollection<Contact> Contacts { get; } = new ObservableCollection<Contact>();
 
+    /// <summary>
+    /// Выбранный контакт
+    /// </summary>
     public Contact SelectedContact
     {
         get => _selectedContact;
@@ -52,6 +66,9 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Контакт в режиме редактирования (копия выбранного контакта)
+    /// </summary>
     public Contact EditingContact
     {
         get => _editingContact;
@@ -62,6 +79,9 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Флаг режима редактирования
+    /// </summary>
     public bool IsEditing
     {
         get => _isEditing;
@@ -74,9 +94,16 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Обратное свойство для IsEditing (удобно для привязок)
+    /// </summary>
     public bool IsNotEditing => !IsEditing;
 
+    /// <summary>
+    /// Флаг наличия выбранного контакта
+    /// </summary>
     public bool HasSelectedContact => SelectedContact != null;
+
 
     public ICommand AddCommand { get; }
     public ICommand EditCommand { get; }
@@ -85,25 +112,32 @@ public class MainViewModel : INotifyPropertyChanged
 
     public MainViewModel()
     {
+
         _contactsView = CollectionViewSource.GetDefaultView(Contacts);
         _contactsView.Filter = FilterContacts;
 
+
         this.PropertyChanged += (s, e) =>
+        {
+            if (e.PropertyName == nameof(SearchText))
             {
-                if (e.PropertyName == nameof(SearchText))
-                {
-                    _contactsView.Refresh();
-                }
-            };
+                _contactsView.Refresh();
+            }
+        };
+
 
         AddCommand = new RelayCommand(_ => StartAdd(), _ => IsNotEditing);
         EditCommand = new RelayCommand(_ => StartEdit(), _ => IsNotEditing && HasSelectedContact);
         RemoveCommand = new RelayCommand(_ => RemoveContact(), _ => IsNotEditing && HasSelectedContact);
         ApplyCommand = new RelayCommand(_ => ApplyChanges(), _ => CanApplyChanges());
 
+
         LoadContacts();
     }
 
+    /// <summary>
+    /// Фильтр контактов по тексту поиска
+    /// </summary>
     private bool FilterContacts(object item)
     {
         if (string.IsNullOrWhiteSpace(_searchText))
@@ -119,6 +153,9 @@ public class MainViewModel : INotifyPropertyChanged
         return false;
     }
 
+    /// <summary>
+    /// Начало добавления нового контакта
+    /// </summary>
     private void StartAdd()
     {
         SelectedContact = null;
@@ -126,15 +163,26 @@ public class MainViewModel : INotifyPropertyChanged
         IsEditing = true;
     }
 
+    /// <summary>
+    /// Начало редактирования контакта
+    /// </summary>
     private void StartEdit()
     {
         if (SelectedContact != null)
         {
-            EditingContact = new Contact { Name = SelectedContact.Name, Email = SelectedContact.Email, Phone = SelectedContact.Phone };
+            EditingContact = new Contact
+            {
+                Name = SelectedContact.Name,
+                Email = SelectedContact.Email,
+                Phone = SelectedContact.Phone
+            };
             IsEditing = true;
         }
     }
 
+    /// <summary>
+    /// Отмена редактирования
+    /// </summary>
     private void CancelEdit()
     {
         IsEditing = false;
@@ -144,15 +192,22 @@ public class MainViewModel : INotifyPropertyChanged
         }
         else
         {
-            EditingContact = new Contact { Name = SelectedContact.Name, Email = SelectedContact.Email, Phone = SelectedContact.Phone };
+            EditingContact = new Contact
+            {
+                Name = SelectedContact.Name,
+                Email = SelectedContact.Email,
+                Phone = SelectedContact.Phone
+            };
         }
     }
 
+    /// <summary>
+    /// Применение изменений (добавление или сохранение)
+    /// </summary>
     private void ApplyChanges()
     {
         if (SelectedContact == null)
         {
-            // Adding new contact
             var newContact = new Contact
             {
                 Name = EditingContact.Name,
@@ -165,7 +220,6 @@ public class MainViewModel : INotifyPropertyChanged
         }
         else
         {
-            // Editing existing contact
             SelectedContact.Name = EditingContact.Name;
             SelectedContact.Email = EditingContact.Email;
             SelectedContact.Phone = EditingContact.Phone;
@@ -175,6 +229,9 @@ public class MainViewModel : INotifyPropertyChanged
         SaveContacts();
     }
 
+    /// <summary>
+    /// Удаление контакта
+    /// </summary>
     private void RemoveContact()
     {
         if (SelectedContact != null)
@@ -195,6 +252,9 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Загрузка контактов из файла
+    /// </summary>
     private void LoadContacts()
     {
         try
@@ -220,6 +280,9 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Сохранение контактов в файл
+    /// </summary>
     private void SaveContacts()
     {
         try
@@ -232,6 +295,9 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Проверка возможности применения изменений
+    /// </summary>
     private bool CanApplyChanges()
     {
         return IsEditing && EditingContact != null && !((INotifyDataErrorInfo)EditingContact).HasErrors;

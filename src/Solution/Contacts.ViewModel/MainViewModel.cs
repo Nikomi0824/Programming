@@ -11,12 +11,16 @@ using CommunityToolkit.Mvvm.Input;
 using Contacts.Model;
 using Contacts.Model.Services;
 
-
 namespace Contacts.ViewModel
 {
+    /// <summary>
+    /// ViewModel главного окна приложения, управляющая коллекцией контактов
+    /// и предоставляющая команды для работы с ними.
+    /// </summary>
     public class MainViewModel : INotifyPropertyChanged
     {
         private const string ContactsFilePath = "contacts.xml";
+
         private Contact _selectedContact;
         private Contact _editingContact;
         private bool _isEditing;
@@ -24,6 +28,9 @@ namespace Contacts.ViewModel
 
         private ICollectionView _contactsView;
 
+        /// <summary>
+        /// Текст для поиска контактов
+        /// </summary>
         public string SearchText
         {
             get => _searchText;
@@ -31,12 +38,18 @@ namespace Contacts.ViewModel
             {
                 _searchText = value;
                 OnPropertyChanged();
-                _contactsView?.Refresh();
+                _contactsView?.Refresh(); 
             }
         }
 
+        /// <summary>
+        /// Коллекция контактов (ObservableCollection для автоматического обновления UI)
+        /// </summary>
         public ObservableCollection<Contact> Contacts { get; } = new ObservableCollection<Contact>();
 
+        /// <summary>
+        /// Выбранный контакт
+        /// </summary>
         public Contact SelectedContact
         {
             get => _selectedContact;
@@ -52,11 +65,14 @@ namespace Contacts.ViewModel
                     _selectedContact = value;
                     EditingContact = value != null ? new Contact { Name = value.Name, Email = value.Email, Phone = value.Phone } : null;
                     OnPropertyChanged();
-                    CommandManager.InvalidateRequerySuggested();
+                    CommandManager.InvalidateRequerySuggested(); 
                 }
             }
         }
 
+        /// <summary>
+        /// Контакт в режиме редактирования (копия выбранного контакта)
+        /// </summary>
         public Contact EditingContact
         {
             get => _editingContact;
@@ -67,6 +83,9 @@ namespace Contacts.ViewModel
             }
         }
 
+        /// <summary>
+        /// Флаг режима редактирования
+        /// </summary>
         public bool IsEditing
         {
             get => _isEditing;
@@ -74,15 +93,22 @@ namespace Contacts.ViewModel
             {
                 _isEditing = value;
                 OnPropertyChanged();
-                OnPropertyChanged(nameof(IsNotEditing));
-                CommandManager.InvalidateRequerySuggested();
+                OnPropertyChanged(nameof(IsNotEditing)); 
+                CommandManager.InvalidateRequerySuggested(); 
             }
         }
 
+        /// <summary>
+        /// Обратное свойство для IsEditing (удобно для привязок)
+        /// </summary>
         public bool IsNotEditing => !IsEditing;
 
+        /// <summary>
+        /// Флаг наличия выбранного контакта
+        /// </summary>
         public bool HasSelectedContact => SelectedContact != null;
 
+  
         public ICommand AddCommand { get; }
         public ICommand EditCommand { get; }
         public ICommand RemoveCommand { get; }
@@ -90,9 +116,11 @@ namespace Contacts.ViewModel
 
         public MainViewModel()
         {
+ 
             _contactsView = CollectionViewSource.GetDefaultView(Contacts);
             _contactsView.Filter = FilterContacts;
 
+     
             this.PropertyChanged += (s, e) =>
             {
                 if (e.PropertyName == nameof(SearchText))
@@ -101,14 +129,19 @@ namespace Contacts.ViewModel
                 }
             };
 
+
             AddCommand = new CustomRelayCommand(_ => StartAdd(), _ => IsNotEditing);
             EditCommand = new CustomRelayCommand(_ => StartEdit(), _ => IsNotEditing && HasSelectedContact);
             RemoveCommand = new CustomRelayCommand(_ => RemoveContact(), _ => IsNotEditing && HasSelectedContact);
             ApplyCommand = new CustomRelayCommand(_ => ApplyChanges(), _ => CanApplyChanges());
 
+    
             LoadContacts();
         }
 
+        /// <summary>
+        /// Фильтр контактов по тексту поиска
+        /// </summary>
         private bool FilterContacts(object item)
         {
             if (string.IsNullOrWhiteSpace(_searchText))
@@ -124,6 +157,9 @@ namespace Contacts.ViewModel
             return false;
         }
 
+        /// <summary>
+        /// Начало добавления нового контакта
+        /// </summary>
         private void StartAdd()
         {
             SelectedContact = null;
@@ -131,15 +167,26 @@ namespace Contacts.ViewModel
             IsEditing = true;
         }
 
+        /// <summary>
+        /// Начало редактирования контакта
+        /// </summary>
         private void StartEdit()
         {
             if (SelectedContact != null)
             {
-                EditingContact = new Contact { Name = SelectedContact.Name, Email = SelectedContact.Email, Phone = SelectedContact.Phone };
+                EditingContact = new Contact
+                {
+                    Name = SelectedContact.Name,
+                    Email = SelectedContact.Email,
+                    Phone = SelectedContact.Phone
+                };
                 IsEditing = true;
             }
         }
 
+        /// <summary>
+        /// Отмена редактирования
+        /// </summary>
         private void CancelEdit()
         {
             IsEditing = false;
@@ -149,15 +196,22 @@ namespace Contacts.ViewModel
             }
             else
             {
-                EditingContact = new Contact { Name = SelectedContact.Name, Email = SelectedContact.Email, Phone = SelectedContact.Phone };
+                EditingContact = new Contact
+                {
+                    Name = SelectedContact.Name,
+                    Email = SelectedContact.Email,
+                    Phone = SelectedContact.Phone
+                };
             }
         }
 
+        /// <summary>
+        /// Применение изменений (добавление или сохранение)
+        /// </summary>
         private void ApplyChanges()
         {
             if (SelectedContact == null)
             {
-                // Adding new contact
                 var newContact = new Contact
                 {
                     Name = EditingContact.Name,
@@ -170,16 +224,18 @@ namespace Contacts.ViewModel
             }
             else
             {
-                // Editing existing contact
                 SelectedContact.Name = EditingContact.Name;
                 SelectedContact.Email = EditingContact.Email;
                 SelectedContact.Phone = EditingContact.Phone;
             }
 
             IsEditing = false;
-            SaveContacts();
+            SaveContacts(); 
         }
 
+        /// <summary>
+        /// Удаление контакта
+        /// </summary>
         private void RemoveContact()
         {
             if (SelectedContact != null)
@@ -196,10 +252,13 @@ namespace Contacts.ViewModel
                     SelectedContact = null;
                 }
 
-                SaveContacts();
+                SaveContacts(); 
             }
         }
 
+        /// <summary>
+        /// Загрузка контактов из файла
+        /// </summary>
         private void LoadContacts()
         {
             try
@@ -225,6 +284,9 @@ namespace Contacts.ViewModel
             }
         }
 
+        /// <summary>
+        /// Сохранение контактов в файл
+        /// </summary>
         private void SaveContacts()
         {
             try
@@ -237,6 +299,9 @@ namespace Contacts.ViewModel
             }
         }
 
+        /// <summary>
+        /// Проверка возможности применения изменений
+        /// </summary>
         private bool CanApplyChanges()
         {
             return IsEditing && EditingContact != null && !((INotifyDataErrorInfo)EditingContact).HasErrors;
